@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+	<name>high_level_robosub</name>
+	<version>0.0.0</version>
+	<description>TODO: Package description</description>
+	<maintainer email="ed@todo.todo">ed</maintainer>
+	<license>TODO: License declaration</license>
+
+	<test_depend>ament_copyright</test_depend>
+	<test_depend>ament_flake8</test_depend>
+	<test_depend>ament_pep257</test_depend>
+	<test_depend>python3-pytest</test_depend>
+
+	<exec_depend>dave</exec_depend>
+	<exec_depend>dave_gz_model_plugins</exec_depend>
+	<exec_depend>dave_gz_sensor_plugins</exec_depend>
+	<exec_depend>dave_gz_world_plugins</exec_depend>
+	<exec_depend>dave_interfaces</exec_depend>
+	<exec_depend>dave_object_models</exec_depend>
+	<exec_depend>dave_robot_models</exec_depend>
+	<exec_depend>dave_ros_gz_plugins</exec_depend>
+	<exec_depend>dave_sensor_models</exec_depend>
+	<exec_depend>dave_worlds</exec_depend>
+
+	<export>
+		<build_type>ament_python</build_type>
+	</export>
+</package>

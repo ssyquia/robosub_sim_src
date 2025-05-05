@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<robot name="high_level_robosub">
+
+	<!-- Block -->
+	<link name="base_link">
+		<inertial>
+			<mass value="200.0"/>
+			<origin xyz="0 0 0"/>
+			<inertia
+				ixx="5.5808" ixy="0.0" ixz="0.0"
+				iyy="5.8858" iyz="0.0"
+				izz="8.2400"/>
+		</inertial>
+		<visual>
+			<geometry>
+				<box size="0.716 0.690 0.440"/>
+			</geometry>
+			<material name="blue">
+				<color rgba="0 0 1 1"/>
+			</material>
+		</visual>
+		<collision>
+			<geometry>
+				<box size="0.716 0.690 0.440"/>
+			</geometry>
+		</collision>
+	</link>
+
+	<!-- Camera -->
+	<link name="camera_link">
+		<inertial>
+			<mass value="1.0" rpy="0 0 0"/>
+			<origin xyz="0.5 0 0"/>
+			<inertia
+				ixx="0.01" ixy="0.0" ixz="0.0"
+				iyy="0.01" iyz="0.0"
+				izz="0.01"/>
+		</inertial>
+		<visual>
+			<geometry>
+				<box size="0.1 0.1 0.1"/>
+			</geometry>
+			<material name="red">
+				<color rgba="1 0 0 1"/>
+			</material>
+		</visual>
+	</link>
+	<joint name="camera_joint" type="fixed">
+		<origin xyz="0.358 0 0" rpy="3.1416 3.1416 3.1416"/>
+		<parent link="base_link"/>
+		<child link="camera_link"/>
+    </joint>
+
+
+	<gazebo reference="camera_link">
+		<sensor name="underwater_camera" type="rgbd_camera">
+			<update_rate>10</update_rate>
+			<visualize>true</visualize>
+			<always_on>1</always_on>
+			<topic>/robosub/camera</topic>
+			<camera>
+				<horizontal_fov>1.05</horizontal_fov>
+				<image>
+				<width>320</width>
+				<height>240</height>
+				</image>
+				<clip>
+				<near>0.1</near>
+				<far>10.0</far>
+				</clip>
+			</camera>
+			<plugin
+				filename="libUnderwaterCamera.so"
+				name="dave_gz_sensor_plugins::UnderwaterCamera">
+				<attenuationR>0.4</attenuationR>
+				<attenuationG>0.25</attenuationG>
+				<attenuationB>0.1</attenuationB>
+				<!-- Murky Coastal Waters -->
+				<backgroundR>120</backgroundR>
+				<backgroundG>120</backgroundG>
+				<backgroundB>50</backgroundB>
+			</plugin>
+		</sensor>
+	</gazebo>
+
+
+	<plugin name="odometry_publisher" filename="libgz-sim-odometry-publisher-system.so">
+	</plugin>
+</robot>

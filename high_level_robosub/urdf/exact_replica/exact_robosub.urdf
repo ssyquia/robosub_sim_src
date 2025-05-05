@@ -1,0 +1,34 @@
+<robot name="URDF robosub">
+	<link name="base_link">
+		<inertial>
+			<origin xyz="0.1191 0.38744 0.43061" rpy="0 0 0" />
+			<mass value="15.844" />
+			<inertia 
+				ixx="0.25852"
+				ixy="-7.431E-06"
+				ixz="6.5652E-05"
+				iyy="0.43597"
+				iyz="0.0013605"
+				izz="0.21614" />
+		</inertial>
+		<visual>
+			<origin xyz="0 0 0" rpy="0 0 0" />
+			<geometry>
+				<mesh filename="base_link.STL" />
+			</geometry>
+			<material name="">
+				<color rgba="0.79216 0.81961 0.93333 1" />
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0" rpy="0 0 0" />
+			<geometry>
+				<box size="1 1 1" />
+			</geometry>
+		</collision>
+	</link>
+
+	<gazebo>
+		<plugin name="gazebo_ros_init" filename="libgazebo_ros_init.so"/>
+	</gazebo>
+</robot>
