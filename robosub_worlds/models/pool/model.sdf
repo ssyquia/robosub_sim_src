@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<sdf version="1.7">
+	<model name="pool">
+		<static>true</static>
+
+		<link name="base_link">
+			<inertial>
+				<pose>0 0 0 0 0 0</pose>
+				<mass>1.0</mass>
+				<inertia>
+					<ixx>1.0</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>1.0</iyy>
+					<iyz>0.0</iyz>
+					<izz>1.0</izz>
+				</inertia>
+			</inertial>
+
+			<visual name="visual_mesh">
+				<pose>0 0 0 0 0 0</pose>
+				<geometry>
+					<mesh>
+						<scale>1 1 1</scale>
+						<uri>model://pool/meshes/pool.obj</uri>
+					</mesh>
+				</geometry>
+			</visual>
+
+			<collision name="hitbox">
+				<pose>0 0 0 0 0 0</pose>
+				<geometry>
+					<mesh>
+						<scale>1 1 1</scale>
+						<uri>model://pool/meshes/pool.obj</uri>
+					</mesh>
+				</geometry>
+			</collision>
+
+			<material>
+				<ambient>0.2 0.2 0.2 1</ambient>
+				<diffuse>0.8 0.8 0.8 1</diffuse>
+				<specular>0.1 0.1 0.1 1</specular>
+				<emissive>0 0 0 1</emissive>
+			</material>
+
+		</link>
+			
+	</model>
+</sdf>
