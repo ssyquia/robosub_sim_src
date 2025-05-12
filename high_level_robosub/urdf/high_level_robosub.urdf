@@ -83,7 +83,9 @@
 		</sensor>
 	</gazebo>
 
-
-	<plugin name="odometry_publisher" filename="libgz-sim-odometry-publisher-system.so">
-	</plugin>
+	<gazebo>
+		<plugin name="gz::sim::systems::OdometryPublisher" filename="libgz-sim8-odometry-publisher-system.so">
+			<tf_topic>/model/high_level_robosub/pose</tf_topic>
+		</plugin>
+	</gazebo>
 </robot>

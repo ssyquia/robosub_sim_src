@@ -21,7 +21,7 @@
 				<pose>0 0 0 0 0 0</pose>
 				<geometry>
 					<mesh>
-						<scale>1 1 1</scale>
+						<scale>0.05 0.05 0.05</scale>
 						<uri>model://gate/meshes/gateassembly.obj</uri>
 					</mesh>
 				</geometry>
@@ -31,7 +31,7 @@
 				<pose>0 0 0 0 0 0</pose>
 				<geometry>
 					<mesh>
-						<scale>1 1 1</scale>
+						<scale>0.05 0.05 0.05</scale>
 						<uri>model://gate/meshes/gateassembly.obj</uri>
 					</mesh>
 				</geometry>

@@ -3,17 +3,21 @@
 #include <std_msgs/msg/int32.hpp>
 
 #include <gz/transport/Node.hh>
+#include <gz/math/Quaternion.hh>
+#include <gz/msgs/quaternion.pb.h>
 #include <gz/msgs/wrench.pb.h>
 #include <gz/msgs/twist.pb.h>
 #include <gz/msgs/entity.pb.h>
 #include <gz/msgs/entity_wrench.pb.h>
+#include <gz/msgs/pose_v.pb.h>
+#include <gz/msgs/pose.pb.h>
 
 class WrenchMovement : public rclcpp::Node {
 	public:
 		WrenchMovement()
 		: Node("wrench_movement_node"),
 			force_magnitude_(10000.0),
-			damping_gain_(500.0)
+			//damping_gain_(10000.0)
 		{
 			gz_node_ = std::make_shared<gz::transport::Node>();
 
@@ -33,12 +37,13 @@ class WrenchMovement : public rclcpp::Node {
 				std::chrono::milliseconds(100),
 				std::bind(&WrenchMovement::timer_callback, this)
 			);
-
-			bool ok = gz_node_->Subscribe("/world/pool/model/high_level_robosub/twist", &WrenchMovement::twist_callback, this);
+			
+			
+			bool ok = gz_node_->Subscribe("/model/high_level_robosub/pose", &WrenchMovement::pose_callback, this);
 			if (!ok) {
-				RCLCPP_ERROR(this->get_logger(), "Failed to subscribe to twist topic.");
+				RCLCPP_ERROR(this->get_logger(), "Failed to subscribe to pose topic.");
 			}
-
+			
 			gz_node_pub_ = gz_node_->Advertise<gz::msgs::EntityWrench>("/world/pool/wrench");
 			if (!gz_node_pub_) {
 				RCLCPP_ERROR(this->get_logger(), "Failed to advertise on /world/pool/wrench");
@@ -46,25 +51,33 @@ class WrenchMovement : public rclcpp::Node {
 		}
 
 	private:
-		void twist_callback(const gz::msgs::Twist &msg) {
-			double wx = msg.angular().x();  // rotation about X
-			//double wy = msg.angular().y();  // allowed: rotation about Y
-			double wz = msg.angular().z();  // rotation about Z
+		void pose_callback(const gz::msgs::Pose_V &msg) {
+			gz::msgs::Pose pose = msg.pose(0);
+			gz::msgs::Quaternion orientation = pose.orientation();
+			gz::math::Quaterniond q(
+				orientation.w(),
+				orientation.x(),
+				orientation.y(),
+				orientation.z()
+			);			
+
+			gz::math::Vector3d z_body_in_world = q.RotateVector(gz::math::Vector3d(0, 0, 1));
+			gz::math::Vector3d z_world(0, 0, 1);
+			gz::math::Vector3d torque_dir = z_body_in_world.Cross(z_world);
 		
 			// Compute damping torque (proportional negative feedback)
 			gz::msgs::Vector3d torque;
-			torque.set_x(-damping_gain_ * wx);
-			torque.set_y(0.0); // allow rotation about Y
-			torque.set_z(-damping_gain_ * wz);
+			torque.set_x(-damping_gain_ * torque_dir.X());
+			torque.set_y(-damping_gain_ * torque_dir.Y());
+			torque.set_z(-damping_gain_ * torque_dir.Z());
 			
-			RCLCPP_INFO(this->get_logger(), "Torque - x: %.2f, y: %.2f, z: %.2f", torque.x(), torque.y(), torque.z());
+			RCLCPP_INFO(this->get_logger(), "Pose Torque - x: %.2f, y: %.2f, z: %.2f \n", torque.x(), torque.y(), torque.z());
 			wrench_.mutable_torque()->CopyFrom(torque);
 		}
 
 		void keypress_callback(const std_msgs::msg::Int32::SharedPtr msg)
 		{
 			int key_code = msg->data;
-			//RCLCPP_INFO(this->get_logger(), "Key code: %d", key_code);
 
 			// Reset wrench to zero before applying a new one
 			wrench_.mutable_force()->set_x(0.0);
@@ -105,9 +118,6 @@ class WrenchMovement : public rclcpp::Node {
 
 			if (!(gz_node_pub_.Publish(msg))) {
 				RCLCPP_ERROR(this->get_logger(), "Failed to publish wrench message.");
-			} else {
-				const auto &torque = wrench_.torque();
-				RCLCPP_INFO(this->get_logger(), "Torque - x: %.2f, y: %.2f, z: %.2f", torque.x(), torque.y(), torque.z());
 			}
 		}
 
