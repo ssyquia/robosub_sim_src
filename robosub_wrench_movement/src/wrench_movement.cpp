@@ -4,6 +4,8 @@
 
 #include <gz/transport/Node.hh>
 #include <gz/math/Quaternion.hh>
+#include <gz/math/Vector3.hh>
+
 #include <gz/msgs/quaternion.pb.h>
 #include <gz/msgs/wrench.pb.h>
 #include <gz/msgs/twist.pb.h>
@@ -12,13 +14,16 @@
 #include <gz/msgs/pose_v.pb.h>
 #include <gz/msgs/pose.pb.h>
 
+#include <cmath>
+
 class WrenchMovement : public rclcpp::Node {
 	public:
 		WrenchMovement()
 		: Node("wrench_movement_node"),
 			force_magnitude_(10000.0),
-			//damping_gain_(10000.0)
+			damping_gain_(5000.0)
 		{
+			prev_time_ = this->now();
 			gz_node_ = std::make_shared<gz::transport::Node>();
 
 			wrench_.mutable_force()->set_x(0.0);
@@ -52,27 +57,44 @@ class WrenchMovement : public rclcpp::Node {
 
 	private:
 		void pose_callback(const gz::msgs::Pose_V &msg) {
-			gz::msgs::Pose pose = msg.pose(0);
-			gz::msgs::Quaternion orientation = pose.orientation();
-			gz::math::Quaterniond q(
-				orientation.w(),
-				orientation.x(),
-				orientation.y(),
-				orientation.z()
-			);			
+			rclcpp::Time current_time = this->now();
+			double dt = (current_time - prev_time_).seconds();
 
-			gz::math::Vector3d z_body_in_world = q.RotateVector(gz::math::Vector3d(0, 0, 1));
-			gz::math::Vector3d z_world(0, 0, 1);
-			gz::math::Vector3d torque_dir = z_body_in_world.Cross(z_world);
-		
-			// Compute damping torque (proportional negative feedback)
-			gz::msgs::Vector3d torque;
-			torque.set_x(-damping_gain_ * torque_dir.X());
-			torque.set_y(-damping_gain_ * torque_dir.Y());
-			torque.set_z(-damping_gain_ * torque_dir.Z());
-			
-			RCLCPP_INFO(this->get_logger(), "Pose Torque - x: %.2f, y: %.2f, z: %.2f \n", torque.x(), torque.y(), torque.z());
-			wrench_.mutable_torque()->CopyFrom(torque);
+			if (!first_time_ && dt > 0.0) {
+				gz::msgs::Pose pose = msg.pose(0);
+				gz::msgs::Quaternion orientation = pose.orientation();
+				gz::math::Quaterniond q_current(orientation.w(), orientation.x(), orientation.y(), orientation.z());
+				
+				// Quaternion delta
+				gz::math::Quaterniond q_delta = q_current * prev_orientation_.Inverse();
+
+				// Convert quaternion delta to axis-angle
+				gz::math::Vector3d axis;
+				double angle;
+				q_delta.AxisAngle(axis, angle);
+
+				// Estimated angular velocity (rad/s)
+				gz::math::Vector3d angular_velocity = axis * (angle / dt);
+
+				// Apply damping torque: τ = -kD * ω
+				gz::math::Vector3d damping_torque = -damping_gain_ * angular_velocity;
+
+				// Send as gz::msgs
+				gz::msgs::Wrench wrench;
+				wrench_.mutable_torque()->set_x(damping_torque.X());
+				wrench_.mutable_torque()->set_y(damping_torque.Y());
+				wrench_.mutable_torque()->set_z(damping_torque.Z());
+
+				// Update for next time
+				prev_orientation_ = q_current;
+				prev_time_ = current_time;
+			} else {
+				gz::msgs::Pose pose = msg.pose(0);
+				gz::msgs::Quaternion orientation = pose.orientation();
+				prev_orientation_ = gz::math::Quaterniond(orientation.w(), orientation.x(), orientation.y(), orientation.z());
+				prev_time_ = current_time;
+				first_time_ = false;
+			}
 		}
 
 		void keypress_callback(const std_msgs::msg::Int32::SharedPtr msg)
@@ -124,6 +146,10 @@ class WrenchMovement : public rclcpp::Node {
 		gz::msgs::Wrench wrench_;
 		double force_magnitude_;
 		double damping_gain_;
+
+		gz::math::Quaterniond prev_orientation_;
+		rclcpp::Time prev_time_;
+		bool first_time_ = true;
 
 		rclcpp::TimerBase::SharedPtr timer_;
 		rclcpp::Subscription<std_msgs::msg::Int32>::SharedPtr keypress_sub_;

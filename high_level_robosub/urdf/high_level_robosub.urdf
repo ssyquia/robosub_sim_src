@@ -1,19 +1,19 @@
 <?xml version="1.0"?>
 <robot name="high_level_robosub">
 
-	<!-- Block -->
+	<!-- Base -->
 	<link name="base_link">
 		<inertial>
-			<mass value="200.0"/>
+			<mass value="350.0"/>
 			<origin xyz="0 0 0"/>
 			<inertia
-				ixx="5.5808" ixy="0.0" ixz="0.0"
-				iyy="5.8858" iyz="0.0"
-				izz="8.2400"/>
+				ixx="10.83" ixy="0.0" ixz="0.0"
+				iyy="10.83" iyz="0.0"
+				izz="16.33"/>
 		</inertial>
 		<visual>
 			<geometry>
-				<box size="0.716 0.690 0.440"/>
+				<box size="0.7 0.7 0.4"/>
 			</geometry>
 			<material name="blue">
 				<color rgba="0 0 1 1"/>
@@ -21,21 +21,44 @@
 		</visual>
 		<collision>
 			<geometry>
-				<box size="0.716 0.690 0.440"/>
+				<box size="0.7 0.7 0.4"/>
 			</geometry>
 		</collision>
 	</link>
 
+	<!-- Bouyant (positively bouyant component for stability) --> 
+	<link name="bouyant_link">
+		<inertial>
+			<mass value="50.0"/>
+			<origin xyz="0 0 0"/>
+			<inertia
+				ixx="0.05" ixy="0.0" ixz="0.0"
+				iyy="0.05" iyz="0.0"
+				izz="0.08"/>
+		</inertial>
+		<visual>
+			<geometry>
+				<box size="0.7 0.7 0.1"/>
+			</geometry>
+			<material name="white">
+				<color rgba="1 1 1 1"/>
+			</material>
+		</visual>
+		<collision>
+			<geometry>
+				<box size="0.7 0.7 0.4"/>
+			</geometry>
+		</collision>
+	</link>
+	<joint name="bouyant_joint" type="fixed">
+		<origin xyz="0 0 0.25" rpy="0 0 0"/>
+		<parent link="base_link"/>
+		<child link="bouyant_link"/>
+    </joint>
+	
+
 	<!-- Camera -->
 	<link name="camera_link">
-		<inertial>
-			<mass value="1.0" rpy="0 0 0"/>
-			<origin xyz="0.5 0 0"/>
-			<inertia
-				ixx="0.01" ixy="0.0" ixz="0.0"
-				iyy="0.01" iyz="0.0"
-				izz="0.01"/>
-		</inertial>
 		<visual>
 			<geometry>
 				<box size="0.1 0.1 0.1"/>
@@ -46,7 +69,7 @@
 		</visual>
 	</link>
 	<joint name="camera_joint" type="fixed">
-		<origin xyz="0.358 0 0" rpy="3.1416 3.1416 3.1416"/>
+		<origin xyz="0.35 0 0" rpy="3.1416 3.1416 3.1416"/>
 		<parent link="base_link"/>
 		<child link="camera_link"/>
     </joint>
