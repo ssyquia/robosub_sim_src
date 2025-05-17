@@ -14,8 +14,6 @@ def launch_setup(context, *args, **kwargs):
 			"/robosub/camera/image@sensor_msgs/msg/Image@gz.msgs.Image",
 			"/robosub/camera/simulated_image@sensor_msgs/msg/Image@gz.msgs.Image",
 			"/robosub/camera/camera_info@sensor_msgs/msg/CameraInfo@gz.msgs.CameraInfo",
-
-			"/keyboard/keypress@std_msgs/msg/Int32@gz.msgs.Int32",
 		]
 	)
 	robosub_bridge = Node(

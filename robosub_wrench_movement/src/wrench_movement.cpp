@@ -36,11 +36,6 @@ class WrenchMovement : public rclcpp::Node {
 			drag_force_.Set(0.0, 0.0, 0.0);
 			drag_torque_.Set(0.0, 0.0, 0.0);
 
-			/*
-			keypress_sub_ = this->create_subscription<std_msgs::msg::Int32>(
-				"/keyboard/keypress", 10,
-				std::bind(&WrenchMovement::keypress_callback, this, std::placeholders::_1)
-			); */
 			control_sub_ = this->create_subscription<std_msgs::msg::Int32MultiArray>(
 				"/vector_topic", 10,
 				std::bind(&WrenchMovement::control_callback, this, std::placeholders::_1)
@@ -107,39 +102,6 @@ class WrenchMovement : public rclcpp::Node {
 			}
 		}
 
-		void keypress_callback(const std_msgs::msg::Int32::SharedPtr msg) {
-			int key_code = msg->data;
-
-			// Reset wrench to zero before applying a new one
-			thrust_force_.Set(0.0, 0.0, 0.0);
-
-			RCLCPP_INFO(this->get_logger(), "Keycode: %d \n", key_code);
-
-			switch (key_code) {
-				case 'W':
-					thrust_force_.X(1 * force_magnitude_);
-					break;
-				case 'S':
-					thrust_force_.X(-1 * force_magnitude_);
-					break;
-				case 'A':
-					thrust_force_.Y(1 * force_magnitude_);
-					break;
-				case 'D':
-					thrust_force_.Y(-1 * force_magnitude_);
-					break;
-				case ' ':
-					thrust_force_.Z(1 * force_magnitude_);
-					break;
-				case 'V':
-					thrust_force_.Z(-1 * force_magnitude_);
-					break;
-				default:
-					break;
-			}
-			//RCLCPP_INFO(this->get_logger(), "Thrust - x: %.2f, y: %.2f, z: %.2f \n", thrust_.X(), thrust_.Y(), thrust_.Z());
-		}
-
 		void control_callback(const std_msgs::msg::Int32MultiArray::SharedPtr msg) {
 			std::vector<int> data = msg->data;
 
@@ -147,7 +109,7 @@ class WrenchMovement : public rclcpp::Node {
 			gz::math::Vector3d rightVector = 	prev_orientation_.RotateVector(gz::math::Vector3d(0, 1, 0));
 			gz::math::Vector3d upVector = 		prev_orientation_.RotateVector(gz::math::Vector3d(0, 0, 1));
 			//RCLCPP_INFO(this->get_logger(), "Orientation - %.2f, %.2f, %.2f, %.2f \n", prev_orientation_.W(), prev_orientation_.X(), prev_orientation_.Y(), prev_orientation_.Z());
-			RCLCPP_INFO(this->get_logger(), "LookVector - %.2f, %.2f, %.2f \n", lookVector.X(), lookVector.Y(), lookVector.Z());
+			//RCLCPP_INFO(this->get_logger(), "LookVector - %.2f, %.2f, %.2f \n", lookVector.X(), lookVector.Y(), lookVector.Z());
 			//RCLCPP_INFO(this->get_logger(), "Control - %d, %d, %d, %d, %d, %d \n", data[0], data[1], data[2], data[3], data[4], data[5]);
 			
 			thrust_force_ = (
@@ -200,7 +162,6 @@ class WrenchMovement : public rclcpp::Node {
 		bool first_time_ = true;
 
 		rclcpp::TimerBase::SharedPtr timer_;
-		rclcpp::Subscription<std_msgs::msg::Int32>::SharedPtr keypress_sub_;
 		rclcpp::Subscription<std_msgs::msg::Int32MultiArray>::SharedPtr control_sub_;
 
 		std::shared_ptr<gz::transport::Node> gz_node_;
