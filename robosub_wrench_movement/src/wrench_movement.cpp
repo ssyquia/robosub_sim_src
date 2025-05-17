@@ -26,7 +26,7 @@ class WrenchMovement : public rclcpp::Node {
 			torque_magnitude_(5000.0),
 
 			drag_coefficient_(100000.0),
-			rotation_damping_(5000.0)
+			rotation_damping_(8000.0)
 		{
 			prev_time_ = this->now();
 			gz_node_ = std::make_shared<gz::transport::Node>();
