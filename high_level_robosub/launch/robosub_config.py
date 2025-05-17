@@ -25,13 +25,19 @@ def launch_setup(context, *args, **kwargs):
 		output="screen",
 	)
 
-	controls = Node(
+	movement = Node(
 		package="robosub_wrench_movement",
 		executable="wrench_movement",
 		output="screen",
 	)
 
-	return [robosub_bridge, controls]
+	keyInput = Node(
+		package="controls_6dof",
+		executable="listenkey",
+		output="screen",
+	)
+
+	return [robosub_bridge, movement, keyInput]
 
 
 def generate_launch_description():

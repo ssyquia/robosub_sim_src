@@ -1,6 +1,7 @@
 #include <memory>
 #include <rclcpp/rclcpp.hpp>
 #include <std_msgs/msg/int32.hpp>
+#include <std_msgs/msg/int32_multi_array.hpp>
 
 #include <gz/transport/Node.hh>
 #include <gz/math/Quaternion.hh>
@@ -13,6 +14,7 @@
 #include <gz/msgs/entity_wrench.pb.h>
 #include <gz/msgs/pose_v.pb.h>
 #include <gz/msgs/pose.pb.h>
+#include <gz/msgs/pose.pb.h>
 
 #include <cmath>
 
@@ -20,22 +22,28 @@ class WrenchMovement : public rclcpp::Node {
 	public:
 		WrenchMovement()
 		: Node("wrench_movement_node"),
-			force_magnitude_(10000.0),
-			damping_gain_(5000.0)
+			force_magnitude_(100000.0),
+			torque_magnitude_(5000.0),
+
+			drag_coefficient_(100000.0),
+			rotation_damping_(5000.0)
 		{
 			prev_time_ = this->now();
 			gz_node_ = std::make_shared<gz::transport::Node>();
 
-			wrench_.mutable_force()->set_x(0.0);
-			wrench_.mutable_force()->set_y(0.0);
-			wrench_.mutable_force()->set_z(0.0);
-			wrench_.mutable_torque()->set_x(0.0);
-			wrench_.mutable_torque()->set_y(0.0);
-			wrench_.mutable_torque()->set_z(0.0);
+			thrust_force_.Set(0.0, 0.0, 0.0);
+			thrust_torque_.Set(0.0, 0.0, 0.0);
+			drag_force_.Set(0.0, 0.0, 0.0);
+			drag_torque_.Set(0.0, 0.0, 0.0);
 
+			/*
 			keypress_sub_ = this->create_subscription<std_msgs::msg::Int32>(
 				"/keyboard/keypress", 10,
 				std::bind(&WrenchMovement::keypress_callback, this, std::placeholders::_1)
+			); */
+			control_sub_ = this->create_subscription<std_msgs::msg::Int32MultiArray>(
+				"/vector_topic", 10,
+				std::bind(&WrenchMovement::control_callback, this, std::placeholders::_1)
 			);
 
 			timer_ = this->create_wall_timer(
@@ -56,37 +64,39 @@ class WrenchMovement : public rclcpp::Node {
 		}
 
 	private:
-		void pose_callback(const gz::msgs::Pose_V &msg) {
+		void pose_callback(const gz::msgs::Pose_V &msg) { // rotation stabilization and drag force
 			rclcpp::Time current_time = this->now();
 			double dt = (current_time - prev_time_).seconds();
 
 			if (!first_time_ && dt > 0.0) {
 				gz::msgs::Pose pose = msg.pose(0);
-				gz::msgs::Quaternion orientation = pose.orientation();
-				gz::math::Quaterniond q_current(orientation.w(), orientation.x(), orientation.y(), orientation.z());
+				gz::msgs::Vector3d position_msg = pose.position();
+				gz::msgs::Quaternion orientation_msg = pose.orientation();
+
+				gz::math::Vector3d position(position_msg.x(), position_msg.y(), position_msg.z());
+				gz::math::Quaterniond orientation(orientation_msg.w(), orientation_msg.x(), orientation_msg.y(), orientation_msg.z());
 				
-				// Quaternion delta
-				gz::math::Quaterniond q_delta = q_current * prev_orientation_.Inverse();
+				// Rotation dampening
+				{
+					gz::math::Quaterniond q_delta = orientation * prev_orientation_.Inverse();
 
-				// Convert quaternion delta to axis-angle
-				gz::math::Vector3d axis;
-				double angle;
-				q_delta.AxisAngle(axis, angle);
+					gz::math::Vector3d axis;
+					double angle;
+					q_delta.AxisAngle(axis, angle);
 
-				// Estimated angular velocity (rad/s)
-				gz::math::Vector3d angular_velocity = axis * (angle / dt);
+					gz::math::Vector3d angular_velocity = axis * (angle / dt);
+					drag_torque_ = -rotation_damping_ * angular_velocity;
+				}
 
-				// Apply damping torque: τ = -kD * ω
-				gz::math::Vector3d damping_torque = -damping_gain_ * angular_velocity;
-
-				// Send as gz::msgs
-				gz::msgs::Wrench wrench;
-				wrench_.mutable_torque()->set_x(damping_torque.X());
-				wrench_.mutable_torque()->set_y(damping_torque.Y());
-				wrench_.mutable_torque()->set_z(damping_torque.Z());
+				// Translational drag force
+				{
+					gz::math::Vector3d velocity = (position - prev_position_) / dt;
+					drag_force_ = -drag_coefficient_ * velocity;
+				}
 
 				// Update for next time
-				prev_orientation_ = q_current;
+				prev_orientation_ = orientation;
+				prev_position_ = position;
 				prev_time_ = current_time;
 			} else {
 				gz::msgs::Pose pose = msg.pose(0);
@@ -97,44 +107,75 @@ class WrenchMovement : public rclcpp::Node {
 			}
 		}
 
-		void keypress_callback(const std_msgs::msg::Int32::SharedPtr msg)
-		{
+		void keypress_callback(const std_msgs::msg::Int32::SharedPtr msg) {
 			int key_code = msg->data;
 
 			// Reset wrench to zero before applying a new one
-			wrench_.mutable_force()->set_x(0.0);
-			wrench_.mutable_force()->set_y(0.0);
-			wrench_.mutable_force()->set_z(0.0);
+			thrust_force_.Set(0.0, 0.0, 0.0);
+
+			RCLCPP_INFO(this->get_logger(), "Keycode: %d \n", key_code);
 
 			switch (key_code) {
 				case 'W':
-					wrench_.mutable_force()->set_x(force_magnitude_);
+					thrust_force_.X(1 * force_magnitude_);
 					break;
 				case 'S':
-					wrench_.mutable_force()->set_x(-force_magnitude_);
+					thrust_force_.X(-1 * force_magnitude_);
 					break;
 				case 'A':
-					wrench_.mutable_force()->set_y(force_magnitude_);
+					thrust_force_.Y(1 * force_magnitude_);
 					break;
 				case 'D':
-					wrench_.mutable_force()->set_y(-force_magnitude_);
+					thrust_force_.Y(-1 * force_magnitude_);
 					break;
 				case ' ':
-					wrench_.mutable_force()->set_z(force_magnitude_);
+					thrust_force_.Z(1 * force_magnitude_);
 					break;
 				case 'V':
-					wrench_.mutable_force()->set_z(-force_magnitude_);
+					thrust_force_.Z(-1 * force_magnitude_);
 					break;
 				default:
 					break;
 			}
+			//RCLCPP_INFO(this->get_logger(), "Thrust - x: %.2f, y: %.2f, z: %.2f \n", thrust_.X(), thrust_.Y(), thrust_.Z());
 		}
 
-		void timer_callback()
-		{
+		void control_callback(const std_msgs::msg::Int32MultiArray::SharedPtr msg) {
+			std::vector<int> data = msg->data;
+
+			gz::math::Vector3d lookVector = 	prev_orientation_.RotateVector(gz::math::Vector3d(1, 0, 0));
+			gz::math::Vector3d rightVector = 	prev_orientation_.RotateVector(gz::math::Vector3d(0, 1, 0));
+			gz::math::Vector3d upVector = 		prev_orientation_.RotateVector(gz::math::Vector3d(0, 0, 1));
+			//RCLCPP_INFO(this->get_logger(), "Orientation - %.2f, %.2f, %.2f, %.2f \n", prev_orientation_.W(), prev_orientation_.X(), prev_orientation_.Y(), prev_orientation_.Z());
+			RCLCPP_INFO(this->get_logger(), "LookVector - %.2f, %.2f, %.2f \n", lookVector.X(), lookVector.Y(), lookVector.Z());
+			//RCLCPP_INFO(this->get_logger(), "Control - %d, %d, %d, %d, %d, %d \n", data[0], data[1], data[2], data[3], data[4], data[5]);
+			
+			thrust_force_ = (
+				lookVector 	* data[0] * force_magnitude_ + 
+				rightVector * data[1] * force_magnitude_ +
+				upVector 	* data[2] * force_magnitude_
+			);
+
+			thrust_torque_ = (
+				lookVector 	* data[5] * torque_magnitude_ +
+				rightVector * data[4] * torque_magnitude_ +
+				upVector 	* data[3] * torque_magnitude_
+			);
+
+		}
+
+		void timer_callback() {
 			gz::msgs::EntityWrench msg;
 
-			msg.mutable_wrench()->CopyFrom(wrench_);
+			gz::msgs::Wrench wrench;
+			wrench.mutable_force()->set_x(thrust_force_.X() + drag_force_.X());
+			wrench.mutable_force()->set_y(thrust_force_.Y() + drag_force_.Y());
+			wrench.mutable_force()->set_z(thrust_force_.Z() + drag_force_.Z());
+			wrench.mutable_torque()->set_x(thrust_torque_.X() + drag_torque_.X());
+			wrench.mutable_torque()->set_y(thrust_torque_.Y() + drag_torque_.Y());
+			wrench.mutable_torque()->set_z(thrust_torque_.Z() + drag_torque_.Z());
+
+			msg.mutable_wrench()->CopyFrom(wrench);
 			msg.mutable_entity()->set_name("high_level_robosub");
 			msg.mutable_entity()->set_type(gz::msgs::Entity::MODEL);
 
@@ -143,23 +184,30 @@ class WrenchMovement : public rclcpp::Node {
 			}
 		}
 
-		gz::msgs::Wrench wrench_;
-		double force_magnitude_;
-		double damping_gain_;
+		gz::math::Vector3d thrust_force_;
+		gz::math::Vector3d thrust_torque_;
+		gz::math::Vector3d drag_force_;
+		gz::math::Vector3d drag_torque_;
 
+		double force_magnitude_;
+		double torque_magnitude_;
+		double drag_coefficient_;
+		double rotation_damping_;
+
+		gz::math::Vector3d prev_position_;
 		gz::math::Quaterniond prev_orientation_;
 		rclcpp::Time prev_time_;
 		bool first_time_ = true;
 
 		rclcpp::TimerBase::SharedPtr timer_;
 		rclcpp::Subscription<std_msgs::msg::Int32>::SharedPtr keypress_sub_;
+		rclcpp::Subscription<std_msgs::msg::Int32MultiArray>::SharedPtr control_sub_;
 
 		std::shared_ptr<gz::transport::Node> gz_node_;
 		gz::transport::Node::Publisher gz_node_pub_;
 };
 
-int main(int argc, char* argv[])
-{
+int main(int argc, char* argv[]) {
 	rclcpp::init(argc, argv);
 	auto node = std::make_shared<WrenchMovement>();
 
