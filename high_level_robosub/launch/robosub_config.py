@@ -5,10 +5,6 @@ from launch.actions import DeclareLaunchArgument, OpaqueFunction
 
 
 def launch_setup(context, *args, **kwargs):
-	thruster_joints = []
-	for thruster in range(1, 2):
-		thruster_joints.append(f"/model/high_level_robosub/joint/thruster{thruster}_joint")
-
 	robosub_arguments = (
 		[
 			"/robosub/camera/image@sensor_msgs/msg/Image@gz.msgs.Image",

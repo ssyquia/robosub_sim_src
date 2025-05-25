@@ -74,7 +74,6 @@
 		<child link="camera_link"/>
     </joint>
 
-
 	<gazebo reference="camera_link">
 		<sensor name="underwater_camera" type="rgbd_camera">
 			<update_rate>10</update_rate>
