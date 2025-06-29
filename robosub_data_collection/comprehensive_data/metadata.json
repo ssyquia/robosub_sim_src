@@ -1,0 +1,3568 @@
+{
+  "collection_info": {
+    "start_time": 1748772975.4230585,
+    "total_data_points": 113,
+    "images_saved": 103,
+    "robosub_static": true,
+    "gate_positions_used": [
+      {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 2.0,
+        "yaw": 0.0
+      },
+      {
+        "x": 4.0,
+        "y": 2.0,
+        "z": 1.5,
+        "yaw": 0.5
+      },
+      {
+        "x": 6.0,
+        "y": -1.5,
+        "z": 2.5,
+        "yaw": -0.3
+      },
+      {
+        "x": 3.5,
+        "y": 1.0,
+        "z": 1.0,
+        "yaw": 0.8
+      },
+      {
+        "x": 7.0,
+        "y": 0.5,
+        "z": 3.0,
+        "yaw": -0.5
+      }
+    ]
+  },
+  "data": [
+    {
+      "timestamp": 1748772975.424636,
+      "camera_available": false,
+      "robosub_pose_available": false,
+      "gate_pose_available": false,
+      "gate_position_commanded": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 2.0,
+        "yaw": 0.0
+      }
+    },
+    {
+      "timestamp": 1748772975.46855,
+      "camera_available": false,
+      "robosub_pose_available": false,
+      "gate_pose_available": false,
+      "gate_position_commanded": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 2.0,
+        "yaw": 0.0
+      }
+    },
+    {
+      "timestamp": 1748772975.5683885,
+      "camera_available": false,
+      "robosub_pose_available": false,
+      "gate_pose_available": false,
+      "gate_position_commanded": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 2.0,
+        "yaw": 0.0
+      }
+    },
+    {
+      "timestamp": 1748772975.6683683,
+      "camera_available": false,
+      "robosub_pose_available": false,
+      "gate_pose_available": false,
+      "gate_position_commanded": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 2.0,
+        "yaw": 0.0
+      }
+    },
+    {
+      "timestamp": 1748772975.7683547,
+      "camera_available": false,
+      "robosub_pose_available": false,
+      "gate_pose_available": false,
+      "gate_position_commanded": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 2.0,
+        "yaw": 0.0
+      }
+    },
+    {
+      "timestamp": 1748772975.8691635,
+      "camera_available": false,
+      "robosub_pose_available": false,
+      "gate_pose_available": false,
+      "gate_position_commanded": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 2.0,
+        "yaw": 0.0
+      }
+    },
+    {
+      "timestamp": 1748772975.9683948,
+      "camera_available": false,
+      "robosub_pose_available": false,
+      "gate_pose_available": false,
+      "gate_position_commanded": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 2.0,
+        "yaw": 0.0
+      }
+    },
+    {
+      "timestamp": 1748772976.0683448,
+      "camera_available": false,
+      "robosub_pose_available": false,
+      "gate_pose_available": false,
+      "gate_position_commanded": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 2.0,
+        "yaw": 0.0
+      }
+    },
+    {
+      "timestamp": 1748772976.168396,
+      "camera_available": false,
+      "robosub_pose_available": false,
+      "gate_pose_available": false,
+      "gate_position_commanded": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 2.0,
+        "yaw": 0.0
+      }
+    },
+    {
+      "timestamp": 1748772976.2683747,
+      "camera_available": false,
+      "robosub_pose_available": false,
+      "gate_pose_available": false,
+      "gate_position_commanded": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 2.0,
+        "yaw": 0.0
+      }
+    },
+    {
+      "timestamp": 1748772976.3692653,
+      "camera_available": true,
+      "robosub_pose_available": false,
+      "gate_pose_available": false,
+      "gate_position_commanded": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 2.0,
+        "yaw": 0.0
+      },
+      "camera_metadata": {
+        "timestamp": 1748772976.3698032,
+        "height": 240,
+        "width": 320,
+        "encoding": "rgb8",
+        "frame_id": "high_level_robosub/block_link/underwater_camera"
+      },
+      "image_shape": [
+        240,
+        320,
+        3
+      ],
+      "image_filename": "image_000000_1748772976.369265.png",
+      "image_path": "comprehensive_data/images/image_000000_1748772976.369265.png"
+    },
+    {
+      "timestamp": 1748772976.4683495,
+      "camera_available": true,
+      "robosub_pose_available": false,
+      "gate_pose_available": false,
+      "gate_position_commanded": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 2.0,
+        "yaw": 0.0
+      },
+      "camera_metadata": {
+        "timestamp": 1748772976.468475,
+        "height": 240,
+        "width": 320,
+        "encoding": "rgb8",
+        "frame_id": "high_level_robosub/block_link/underwater_camera"
+      },
+      "image_shape": [
+        240,
+        320,
+        3
+      ],
+      "image_filename": "image_000001_1748772976.468349.png",
+      "image_path": "comprehensive_data/images/image_000001_1748772976.468349.png"
+    },
+    {
+      "timestamp": 1748772976.5684373,
+      "camera_available": true,
+      "robosub_pose_available": false,
+      "gate_pose_available": false,
+      "gate_position_commanded": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 2.0,
+        "yaw": 0.0
+      },
+      "camera_metadata": {
+        "timestamp": 1748772976.5685692,
+        "height": 240,
+        "width": 320,
+        "encoding": "rgb8",
+        "frame_id": "high_level_robosub/block_link/underwater_camera"
+      },
+      "image_shape": [
+        240,
+        320,
+        3
+      ],
+      "image_filename": "image_000002_1748772976.568437.png",
+      "image_path": "comprehensive_data/images/image_000002_1748772976.568437.png"
+    },
+    {
+      "timestamp": 1748772976.6685536,
+      "camera_available": true,
+      "robosub_pose_available": false,
+      "gate_pose_available": false,
+      "gate_position_commanded": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 2.0,
+        "yaw": 0.0
+      },
+      "camera_metadata": {
+        "timestamp": 1748772976.6686509,
+        "height": 240,
+        "width": 320,
+        "encoding": "rgb8",
+        "frame_id": "high_level_robosub/block_link/underwater_camera"
+      },
+      "image_shape": [
+        240,
+        320,
+        3
+      ],
+      "image_filename": "image_000003_1748772976.668554.png",
+      "image_path": "comprehensive_data/images/image_000003_1748772976.668554.png"
+    },
+    {
+      "timestamp": 1748772976.768345,
+      "camera_available": true,
+      "robosub_pose_available": false,
+      "gate_pose_available": false,
+      "gate_position_commanded": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 2.0,
+        "yaw": 0.0
+      },
+      "camera_metadata": {
+        "timestamp": 1748772976.7684474,
+        "height": 240,
+        "width": 320,
+        "encoding": "rgb8",
+        "frame_id": "high_level_robosub/block_link/underwater_camera"
+      },
+      "image_shape": [
+        240,
+        320,
+        3
+      ],
+      "image_filename": "image_000004_1748772976.768345.png",
+      "image_path": "comprehensive_data/images/image_000004_1748772976.768345.png"
+    },
+    {
+      "timestamp": 1748772976.8695576,
+      "camera_available": true,
+      "robosub_pose_available": false,
+      "gate_pose_available": false,
+      "gate_position_commanded": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 2.0,
+        "yaw": 0.0
+      },
+      "camera_metadata": {
+        "timestamp": 1748772976.8699105,
+        "height": 240,
+        "width": 320,
+        "encoding": "rgb8",
+        "frame_id": "high_level_robosub/block_link/underwater_camera"
+      },
+      "image_shape": [
+        240,
+        320,
+        3
+      ],
+      "image_filename": "image_000005_1748772976.869558.png",
+      "image_path": "comprehensive_data/images/image_000005_1748772976.869558.png"
+    },
+    {
+      "timestamp": 1748772976.9686859,
+      "camera_available": true,
+      "robosub_pose_available": false,
+      "gate_pose_available": false,
+      "gate_position_commanded": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 2.0,
+        "yaw": 0.0
+      },
+      "camera_metadata": {
+        "timestamp": 1748772976.968931,
+        "height": 240,
+        "width": 320,
+        "encoding": "rgb8",
+        "frame_id": "high_level_robosub/block_link/underwater_camera"
+      },
+      "image_shape": [
+        240,
+        320,
+        3
+      ],
+      "image_filename": "image_000006_1748772976.968686.png",
+      "image_path": "comprehensive_data/images/image_000006_1748772976.968686.png"
+    },
+    {
+      "timestamp": 1748772977.0684652,
+      "camera_available": true,
+      "robosub_pose_available": false,
+      "gate_pose_available": false,
+      "gate_position_commanded": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 2.0,
+        "yaw": 0.0
+      },
+      "camera_metadata": {
+        "timestamp": 1748772977.0686197,
+        "height": 240,
+        "width": 320,
+        "encoding": "rgb8",
+        "frame_id": "high_level_robosub/block_link/underwater_camera"
+      },
+      "image_shape": [
+        240,
+        320,
+        3
+      ],
+      "image_filename": "image_000007_1748772977.068465.png",
+      "image_path": "comprehensive_data/images/image_000007_1748772977.068465.png"
+    },
+    {
+      "timestamp": 1748772977.1683455,
+      "camera_available": true,
+      "robosub_pose_available": false,
+      "gate_pose_available": false,
+      "gate_position_commanded": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 2.0,
+        "yaw": 0.0
+      },
+      "camera_metadata": {
+        "timestamp": 1748772977.1684477,
+        "height": 240,
+        "width": 320,
+        "encoding": "rgb8",
+        "frame_id": "high_level_robosub/block_link/underwater_camera"
+      },
+      "image_shape": [
+        240,
+        320,
+        3
+      ],
+      "image_filename": "image_000008_1748772977.168345.png",
+      "image_path": "comprehensive_data/images/image_000008_1748772977.168345.png"
+    },
+    {
+      "timestamp": 1748772977.2687168,
+      "camera_available": true,
+      "robosub_pose_available": false,
+      "gate_pose_available": false,
+      "gate_position_commanded": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 2.0,
+        "yaw": 0.0
+      },
+      "camera_metadata": {
+        "timestamp": 1748772977.2688096,
+        "height": 240,
+        "width": 320,
+        "encoding": "rgb8",
+        "frame_id": "high_level_robosub/block_link/underwater_camera"
+      },
+      "image_shape": [
+        240,
+        320,
+        3
+      ],
+      "image_filename": "image_000009_1748772977.268717.png",
+      "image_path": "comprehensive_data/images/image_000009_1748772977.268717.png"
+    },
+    {
+      "timestamp": 1748772977.370038,
+      "camera_available": true,
+      "robosub_pose_available": false,
+      "gate_pose_available": false,
+      "gate_position_commanded": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 2.0,
+        "yaw": 0.0
+      },
+      "camera_metadata": {
+        "timestamp": 1748772977.3701344,
+        "height": 240,
+        "width": 320,
+        "encoding": "rgb8",
+        "frame_id": "high_level_robosub/block_link/underwater_camera"
+      },
+      "image_shape": [
+        240,
+        320,
+        3
+      ],
+      "image_filename": "image_000010_1748772977.370038.png",
+      "image_path": "comprehensive_data/images/image_000010_1748772977.370038.png"
+    },
+    {
+      "timestamp": 1748772977.4683275,
+      "camera_available": true,
+      "robosub_pose_available": false,
+      "gate_pose_available": false,
+      "gate_position_commanded": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 2.0,
+        "yaw": 0.0
+      },
+      "camera_metadata": {
+        "timestamp": 1748772977.468426,
+        "height": 240,
+        "width": 320,
+        "encoding": "rgb8",
+        "frame_id": "high_level_robosub/block_link/underwater_camera"
+      },
+      "image_shape": [
+        240,
+        320,
+        3
+      ],
+      "image_filename": "image_000011_1748772977.468328.png",
+      "image_path": "comprehensive_data/images/image_000011_1748772977.468328.png"
+    },
+    {
+      "timestamp": 1748772977.5684085,
+      "camera_available": true,
+      "robosub_pose_available": false,
+      "gate_pose_available": false,
+      "gate_position_commanded": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 2.0,
+        "yaw": 0.0
+      },
+      "camera_metadata": {
+        "timestamp": 1748772977.5685186,
+        "height": 240,
+        "width": 320,
+        "encoding": "rgb8",
+        "frame_id": "high_level_robosub/block_link/underwater_camera"
+      },
+      "image_shape": [
+        240,
+        320,
+        3
+      ],
+      "image_filename": "image_000012_1748772977.568408.png",
+      "image_path": "comprehensive_data/images/image_000012_1748772977.568408.png"
+    },
+    {
+      "timestamp": 1748772977.6683524,
+      "camera_available": true,
+      "robosub_pose_available": false,
+      "gate_pose_available": false,
+      "gate_position_commanded": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 2.0,
+        "yaw": 0.0
+      },
+      "camera_metadata": {
+        "timestamp": 1748772977.6684506,
+        "height": 240,
+        "width": 320,
+        "encoding": "rgb8",
+        "frame_id": "high_level_robosub/block_link/underwater_camera"
+      },
+      "image_shape": [
+        240,
+        320,
+        3
+      ],
+      "image_filename": "image_000013_1748772977.668352.png",
+      "image_path": "comprehensive_data/images/image_000013_1748772977.668352.png"
+    },
+    {
+      "timestamp": 1748772977.7683325,
+      "camera_available": true,
+      "robosub_pose_available": false,
+      "gate_pose_available": false,
+      "gate_position_commanded": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 2.0,
+        "yaw": 0.0
+      },
+      "camera_metadata": {
+        "timestamp": 1748772977.7684274,
+        "height": 240,
+        "width": 320,
+        "encoding": "rgb8",
+        "frame_id": "high_level_robosub/block_link/underwater_camera"
+      },
+      "image_shape": [
+        240,
+        320,
+        3
+      ],
+      "image_filename": "image_000014_1748772977.768332.png",
+      "image_path": "comprehensive_data/images/image_000014_1748772977.768332.png"
+    },
+    {
+      "timestamp": 1748772977.8691828,
+      "camera_available": true,
+      "robosub_pose_available": false,
+      "gate_pose_available": false,
+      "gate_position_commanded": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 2.0,
+        "yaw": 0.0
+      },
+      "camera_metadata": {
+        "timestamp": 1748772977.8692882,
+        "height": 240,
+        "width": 320,
+        "encoding": "rgb8",
+        "frame_id": "high_level_robosub/block_link/underwater_camera"
+      },
+      "image_shape": [
+        240,
+        320,
+        3
+      ],
+      "image_filename": "image_000015_1748772977.869183.png",
+      "image_path": "comprehensive_data/images/image_000015_1748772977.869183.png"
+    },
+    {
+      "timestamp": 1748772977.968325,
+      "camera_available": true,
+      "robosub_pose_available": false,
+      "gate_pose_available": false,
+      "gate_position_commanded": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 2.0,
+        "yaw": 0.0
+      },
+      "camera_metadata": {
+        "timestamp": 1748772977.9684184,
+        "height": 240,
+        "width": 320,
+        "encoding": "rgb8",
+        "frame_id": "high_level_robosub/block_link/underwater_camera"
+      },
+      "image_shape": [
+        240,
+        320,
+        3
+      ],
+      "image_filename": "image_000016_1748772977.968325.png",
+      "image_path": "comprehensive_data/images/image_000016_1748772977.968325.png"
+    },
+    {
+      "timestamp": 1748772978.0683317,
+      "camera_available": true,
+      "robosub_pose_available": false,
+      "gate_pose_available": false,
+      "gate_position_commanded": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 2.0,
+        "yaw": 0.0
+      },
+      "camera_metadata": {
+        "timestamp": 1748772978.068429,
+        "height": 240,
+        "width": 320,
+        "encoding": "rgb8",
+        "frame_id": "high_level_robosub/block_link/underwater_camera"
+      },
+      "image_shape": [
+        240,
+        320,
+        3
+      ],
+      "image_filename": "image_000017_1748772978.068332.png",
+      "image_path": "comprehensive_data/images/image_000017_1748772978.068332.png"
+    },
+    {
+      "timestamp": 1748772978.168344,
+      "camera_available": true,
+      "robosub_pose_available": false,
+      "gate_pose_available": false,
+      "gate_position_commanded": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 2.0,
+        "yaw": 0.0
+      },
+      "camera_metadata": {
+        "timestamp": 1748772978.1684403,
+        "height": 240,
+        "width": 320,
+        "encoding": "rgb8",
+        "frame_id": "high_level_robosub/block_link/underwater_camera"
+      },
+      "image_shape": [
+        240,
+        320,
+        3
+      ],
+      "image_filename": "image_000018_1748772978.168344.png",
+      "image_path": "comprehensive_data/images/image_000018_1748772978.168344.png"
+    },
+    {
+      "timestamp": 1748772978.268394,
+      "camera_available": true,
+      "robosub_pose_available": false,
+      "gate_pose_available": false,
+      "gate_position_commanded": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 2.0,
+        "yaw": 0.0
+      },
+      "camera_metadata": {
+        "timestamp": 1748772978.2685196,
+        "height": 240,
+        "width": 320,
+        "encoding": "rgb8",
+        "frame_id": "high_level_robosub/block_link/underwater_camera"
+      },
+      "image_shape": [
+        240,
+        320,
+        3
+      ],
+      "image_filename": "image_000019_1748772978.268394.png",
+      "image_path": "comprehensive_data/images/image_000019_1748772978.268394.png"
+    },
+    {
+      "timestamp": 1748772978.3705204,
+      "camera_available": true,
+      "robosub_pose_available": false,
+      "gate_pose_available": false,
+      "gate_position_commanded": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 2.0,
+        "yaw": 0.0
+      },
+      "camera_metadata": {
+        "timestamp": 1748772978.3706293,
+        "height": 240,
+        "width": 320,
+        "encoding": "rgb8",
+        "frame_id": "high_level_robosub/block_link/underwater_camera"
+      },
+      "image_shape": [
+        240,
+        320,
+        3
+      ],
+      "image_filename": "image_000020_1748772978.370520.png",
+      "image_path": "comprehensive_data/images/image_000020_1748772978.370520.png"
+    },
+    {
+      "timestamp": 1748772978.4683423,
+      "camera_available": true,
+      "robosub_pose_available": false,
+      "gate_pose_available": false,
+      "gate_position_commanded": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 2.0,
+        "yaw": 0.0
+      },
+      "camera_metadata": {
+        "timestamp": 1748772978.468435,
+        "height": 240,
+        "width": 320,
+        "encoding": "rgb8",
+        "frame_id": "high_level_robosub/block_link/underwater_camera"
+      },
+      "image_shape": [
+        240,
+        320,
+        3
+      ],
+      "image_filename": "image_000021_1748772978.468342.png",
+      "image_path": "comprehensive_data/images/image_000021_1748772978.468342.png"
+    },
+    {
+      "timestamp": 1748772978.5683477,
+      "camera_available": true,
+      "robosub_pose_available": false,
+      "gate_pose_available": false,
+      "gate_position_commanded": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 2.0,
+        "yaw": 0.0
+      },
+      "camera_metadata": {
+        "timestamp": 1748772978.568456,
+        "height": 240,
+        "width": 320,
+        "encoding": "rgb8",
+        "frame_id": "high_level_robosub/block_link/underwater_camera"
+      },
+      "image_shape": [
+        240,
+        320,
+        3
+      ],
+      "image_filename": "image_000022_1748772978.568348.png",
+      "image_path": "comprehensive_data/images/image_000022_1748772978.568348.png"
+    },
+    {
+      "timestamp": 1748772978.6684241,
+      "camera_available": true,
+      "robosub_pose_available": false,
+      "gate_pose_available": false,
+      "gate_position_commanded": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 2.0,
+        "yaw": 0.0
+      },
+      "camera_metadata": {
+        "timestamp": 1748772978.6685157,
+        "height": 240,
+        "width": 320,
+        "encoding": "rgb8",
+        "frame_id": "high_level_robosub/block_link/underwater_camera"
+      },
+      "image_shape": [
+        240,
+        320,
+        3
+      ],
+      "image_filename": "image_000023_1748772978.668424.png",
+      "image_path": "comprehensive_data/images/image_000023_1748772978.668424.png"
+    },
+    {
+      "timestamp": 1748772978.7683382,
+      "camera_available": true,
+      "robosub_pose_available": false,
+      "gate_pose_available": false,
+      "gate_position_commanded": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 2.0,
+        "yaw": 0.0
+      },
+      "camera_metadata": {
+        "timestamp": 1748772978.7684288,
+        "height": 240,
+        "width": 320,
+        "encoding": "rgb8",
+        "frame_id": "high_level_robosub/block_link/underwater_camera"
+      },
+      "image_shape": [
+        240,
+        320,
+        3
+      ],
+      "image_filename": "image_000024_1748772978.768338.png",
+      "image_path": "comprehensive_data/images/image_000024_1748772978.768338.png"
+    },
+    {
+      "timestamp": 1748772978.8689282,
+      "camera_available": true,
+      "robosub_pose_available": false,
+      "gate_pose_available": false,
+      "gate_position_commanded": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 2.0,
+        "yaw": 0.0
+      },
+      "camera_metadata": {
+        "timestamp": 1748772978.8690274,
+        "height": 240,
+        "width": 320,
+        "encoding": "rgb8",
+        "frame_id": "high_level_robosub/block_link/underwater_camera"
+      },
+      "image_shape": [
+        240,
+        320,
+        3
+      ],
+      "image_filename": "image_000025_1748772978.868928.png",
+      "image_path": "comprehensive_data/images/image_000025_1748772978.868928.png"
+    },
+    {
+      "timestamp": 1748772978.9684033,
+      "camera_available": true,
+      "robosub_pose_available": false,
+      "gate_pose_available": false,
+      "gate_position_commanded": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 2.0,
+        "yaw": 0.0
+      },
+      "camera_metadata": {
+        "timestamp": 1748772978.9685295,
+        "height": 240,
+        "width": 320,
+        "encoding": "rgb8",
+        "frame_id": "high_level_robosub/block_link/underwater_camera"
+      },
+      "image_shape": [
+        240,
+        320,
+        3
+      ],
+      "image_filename": "image_000026_1748772978.968403.png",
+      "image_path": "comprehensive_data/images/image_000026_1748772978.968403.png"
+    },
+    {
+      "timestamp": 1748772979.068447,
+      "camera_available": true,
+      "robosub_pose_available": false,
+      "gate_pose_available": false,
+      "gate_position_commanded": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 2.0,
+        "yaw": 0.0
+      },
+      "camera_metadata": {
+        "timestamp": 1748772979.0685477,
+        "height": 240,
+        "width": 320,
+        "encoding": "rgb8",
+        "frame_id": "high_level_robosub/block_link/underwater_camera"
+      },
+      "image_shape": [
+        240,
+        320,
+        3
+      ],
+      "image_filename": "image_000027_1748772979.068447.png",
+      "image_path": "comprehensive_data/images/image_000027_1748772979.068447.png"
+    },
+    {
+      "timestamp": 1748772979.1683662,
+      "camera_available": true,
+      "robosub_pose_available": false,
+      "gate_pose_available": false,
+      "gate_position_commanded": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 2.0,
+        "yaw": 0.0
+      },
+      "camera_metadata": {
+        "timestamp": 1748772979.1684752,
+        "height": 240,
+        "width": 320,
+        "encoding": "rgb8",
+        "frame_id": "high_level_robosub/block_link/underwater_camera"
+      },
+      "image_shape": [
+        240,
+        320,
+        3
+      ],
+      "image_filename": "image_000028_1748772979.168366.png",
+      "image_path": "comprehensive_data/images/image_000028_1748772979.168366.png"
+    },
+    {
+      "timestamp": 1748772979.268595,
+      "camera_available": true,
+      "robosub_pose_available": false,
+      "gate_pose_available": false,
+      "gate_position_commanded": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 2.0,
+        "yaw": 0.0
+      },
+      "camera_metadata": {
+        "timestamp": 1748772979.268692,
+        "height": 240,
+        "width": 320,
+        "encoding": "rgb8",
+        "frame_id": "high_level_robosub/block_link/underwater_camera"
+      },
+      "image_shape": [
+        240,
+        320,
+        3
+      ],
+      "image_filename": "image_000029_1748772979.268595.png",
+      "image_path": "comprehensive_data/images/image_000029_1748772979.268595.png"
+    },
+    {
+      "timestamp": 1748772979.3692467,
+      "camera_available": true,
+      "robosub_pose_available": false,
+      "gate_pose_available": false,
+      "gate_position_commanded": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 2.0,
+        "yaw": 0.0
+      },
+      "camera_metadata": {
+        "timestamp": 1748772979.3693573,
+        "height": 240,
+        "width": 320,
+        "encoding": "rgb8",
+        "frame_id": "high_level_robosub/block_link/underwater_camera"
+      },
+      "image_shape": [
+        240,
+        320,
+        3
+      ],
+      "image_filename": "image_000030_1748772979.369247.png",
+      "image_path": "comprehensive_data/images/image_000030_1748772979.369247.png"
+    },
+    {
+      "timestamp": 1748772979.468489,
+      "camera_available": true,
+      "robosub_pose_available": false,
+      "gate_pose_available": false,
+      "gate_position_commanded": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 2.0,
+        "yaw": 0.0
+      },
+      "camera_metadata": {
+        "timestamp": 1748772979.468587,
+        "height": 240,
+        "width": 320,
+        "encoding": "rgb8",
+        "frame_id": "high_level_robosub/block_link/underwater_camera"
+      },
+      "image_shape": [
+        240,
+        320,
+        3
+      ],
+      "image_filename": "image_000031_1748772979.468489.png",
+      "image_path": "comprehensive_data/images/image_000031_1748772979.468489.png"
+    },
+    {
+      "timestamp": 1748772979.5682762,
+      "camera_available": true,
+      "robosub_pose_available": false,
+      "gate_pose_available": false,
+      "gate_position_commanded": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 2.0,
+        "yaw": 0.0
+      },
+      "camera_metadata": {
+        "timestamp": 1748772979.5683627,
+        "height": 240,
+        "width": 320,
+        "encoding": "rgb8",
+        "frame_id": "high_level_robosub/block_link/underwater_camera"
+      },
+      "image_shape": [
+        240,
+        320,
+        3
+      ],
+      "image_filename": "image_000032_1748772979.568276.png",
+      "image_path": "comprehensive_data/images/image_000032_1748772979.568276.png"
+    },
+    {
+      "timestamp": 1748772979.6683896,
+      "camera_available": true,
+      "robosub_pose_available": false,
+      "gate_pose_available": false,
+      "gate_position_commanded": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 2.0,
+        "yaw": 0.0
+      },
+      "camera_metadata": {
+        "timestamp": 1748772979.668501,
+        "height": 240,
+        "width": 320,
+        "encoding": "rgb8",
+        "frame_id": "high_level_robosub/block_link/underwater_camera"
+      },
+      "image_shape": [
+        240,
+        320,
+        3
+      ],
+      "image_filename": "image_000033_1748772979.668390.png",
+      "image_path": "comprehensive_data/images/image_000033_1748772979.668390.png"
+    },
+    {
+      "timestamp": 1748772979.7683396,
+      "camera_available": true,
+      "robosub_pose_available": false,
+      "gate_pose_available": false,
+      "gate_position_commanded": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 2.0,
+        "yaw": 0.0
+      },
+      "camera_metadata": {
+        "timestamp": 1748772979.7684293,
+        "height": 240,
+        "width": 320,
+        "encoding": "rgb8",
+        "frame_id": "high_level_robosub/block_link/underwater_camera"
+      },
+      "image_shape": [
+        240,
+        320,
+        3
+      ],
+      "image_filename": "image_000034_1748772979.768340.png",
+      "image_path": "comprehensive_data/images/image_000034_1748772979.768340.png"
+    },
+    {
+      "timestamp": 1748772979.8693066,
+      "camera_available": true,
+      "robosub_pose_available": false,
+      "gate_pose_available": false,
+      "gate_position_commanded": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 2.0,
+        "yaw": 0.0
+      },
+      "camera_metadata": {
+        "timestamp": 1748772979.8693957,
+        "height": 240,
+        "width": 320,
+        "encoding": "rgb8",
+        "frame_id": "high_level_robosub/block_link/underwater_camera"
+      },
+      "image_shape": [
+        240,
+        320,
+        3
+      ],
+      "image_filename": "image_000035_1748772979.869307.png",
+      "image_path": "comprehensive_data/images/image_000035_1748772979.869307.png"
+    },
+    {
+      "timestamp": 1748772979.968397,
+      "camera_available": true,
+      "robosub_pose_available": false,
+      "gate_pose_available": false,
+      "gate_position_commanded": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 2.0,
+        "yaw": 0.0
+      },
+      "camera_metadata": {
+        "timestamp": 1748772979.9685013,
+        "height": 240,
+        "width": 320,
+        "encoding": "rgb8",
+        "frame_id": "high_level_robosub/block_link/underwater_camera"
+      },
+      "image_shape": [
+        240,
+        320,
+        3
+      ],
+      "image_filename": "image_000036_1748772979.968397.png",
+      "image_path": "comprehensive_data/images/image_000036_1748772979.968397.png"
+    },
+    {
+      "timestamp": 1748772980.068345,
+      "camera_available": true,
+      "robosub_pose_available": false,
+      "gate_pose_available": false,
+      "gate_position_commanded": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 2.0,
+        "yaw": 0.0
+      },
+      "camera_metadata": {
+        "timestamp": 1748772980.068454,
+        "height": 240,
+        "width": 320,
+        "encoding": "rgb8",
+        "frame_id": "high_level_robosub/block_link/underwater_camera"
+      },
+      "image_shape": [
+        240,
+        320,
+        3
+      ],
+      "image_filename": "image_000037_1748772980.068345.png",
+      "image_path": "comprehensive_data/images/image_000037_1748772980.068345.png"
+    },
+    {
+      "timestamp": 1748772980.1683607,
+      "camera_available": true,
+      "robosub_pose_available": false,
+      "gate_pose_available": false,
+      "gate_position_commanded": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 2.0,
+        "yaw": 0.0
+      },
+      "camera_metadata": {
+        "timestamp": 1748772980.168458,
+        "height": 240,
+        "width": 320,
+        "encoding": "rgb8",
+        "frame_id": "high_level_robosub/block_link/underwater_camera"
+      },
+      "image_shape": [
+        240,
+        320,
+        3
+      ],
+      "image_filename": "image_000038_1748772980.168361.png",
+      "image_path": "comprehensive_data/images/image_000038_1748772980.168361.png"
+    },
+    {
+      "timestamp": 1748772980.2683048,
+      "camera_available": true,
+      "robosub_pose_available": false,
+      "gate_pose_available": false,
+      "gate_position_commanded": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 2.0,
+        "yaw": 0.0
+      },
+      "camera_metadata": {
+        "timestamp": 1748772980.268402,
+        "height": 240,
+        "width": 320,
+        "encoding": "rgb8",
+        "frame_id": "high_level_robosub/block_link/underwater_camera"
+      },
+      "image_shape": [
+        240,
+        320,
+        3
+      ],
+      "image_filename": "image_000039_1748772980.268305.png",
+      "image_path": "comprehensive_data/images/image_000039_1748772980.268305.png"
+    },
+    {
+      "timestamp": 1748772980.3690898,
+      "camera_available": true,
+      "robosub_pose_available": false,
+      "gate_pose_available": false,
+      "gate_position_commanded": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 2.0,
+        "yaw": 0.0
+      },
+      "camera_metadata": {
+        "timestamp": 1748772980.3691866,
+        "height": 240,
+        "width": 320,
+        "encoding": "rgb8",
+        "frame_id": "high_level_robosub/block_link/underwater_camera"
+      },
+      "image_shape": [
+        240,
+        320,
+        3
+      ],
+      "image_filename": "image_000040_1748772980.369090.png",
+      "image_path": "comprehensive_data/images/image_000040_1748772980.369090.png"
+    },
+    {
+      "timestamp": 1748772980.4684558,
+      "camera_available": true,
+      "robosub_pose_available": false,
+      "gate_pose_available": false,
+      "gate_position_commanded": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 2.0,
+        "yaw": 0.0
+      },
+      "camera_metadata": {
+        "timestamp": 1748772980.4685636,
+        "height": 240,
+        "width": 320,
+        "encoding": "rgb8",
+        "frame_id": "high_level_robosub/block_link/underwater_camera"
+      },
+      "image_shape": [
+        240,
+        320,
+        3
+      ],
+      "image_filename": "image_000041_1748772980.468456.png",
+      "image_path": "comprehensive_data/images/image_000041_1748772980.468456.png"
+    },
+    {
+      "timestamp": 1748772980.5686252,
+      "camera_available": true,
+      "robosub_pose_available": false,
+      "gate_pose_available": false,
+      "gate_position_commanded": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 2.0,
+        "yaw": 0.0
+      },
+      "camera_metadata": {
+        "timestamp": 1748772980.568733,
+        "height": 240,
+        "width": 320,
+        "encoding": "rgb8",
+        "frame_id": "high_level_robosub/block_link/underwater_camera"
+      },
+      "image_shape": [
+        240,
+        320,
+        3
+      ],
+      "image_filename": "image_000042_1748772980.568625.png",
+      "image_path": "comprehensive_data/images/image_000042_1748772980.568625.png"
+    },
+    {
+      "timestamp": 1748772980.6685,
+      "camera_available": true,
+      "robosub_pose_available": false,
+      "gate_pose_available": false,
+      "gate_position_commanded": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 2.0,
+        "yaw": 0.0
+      },
+      "camera_metadata": {
+        "timestamp": 1748772980.6686091,
+        "height": 240,
+        "width": 320,
+        "encoding": "rgb8",
+        "frame_id": "high_level_robosub/block_link/underwater_camera"
+      },
+      "image_shape": [
+        240,
+        320,
+        3
+      ],
+      "image_filename": "image_000043_1748772980.668500.png",
+      "image_path": "comprehensive_data/images/image_000043_1748772980.668500.png"
+    },
+    {
+      "timestamp": 1748772980.7684197,
+      "camera_available": true,
+      "robosub_pose_available": false,
+      "gate_pose_available": false,
+      "gate_position_commanded": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 2.0,
+        "yaw": 0.0
+      },
+      "camera_metadata": {
+        "timestamp": 1748772980.7685447,
+        "height": 240,
+        "width": 320,
+        "encoding": "rgb8",
+        "frame_id": "high_level_robosub/block_link/underwater_camera"
+      },
+      "image_shape": [
+        240,
+        320,
+        3
+      ],
+      "image_filename": "image_000044_1748772980.768420.png",
+      "image_path": "comprehensive_data/images/image_000044_1748772980.768420.png"
+    },
+    {
+      "timestamp": 1748772980.8691363,
+      "camera_available": true,
+      "robosub_pose_available": false,
+      "gate_pose_available": false,
+      "gate_position_commanded": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 2.0,
+        "yaw": 0.0
+      },
+      "camera_metadata": {
+        "timestamp": 1748772980.869241,
+        "height": 240,
+        "width": 320,
+        "encoding": "rgb8",
+        "frame_id": "high_level_robosub/block_link/underwater_camera"
+      },
+      "image_shape": [
+        240,
+        320,
+        3
+      ],
+      "image_filename": "image_000045_1748772980.869136.png",
+      "image_path": "comprehensive_data/images/image_000045_1748772980.869136.png"
+    },
+    {
+      "timestamp": 1748772980.9684346,
+      "camera_available": true,
+      "robosub_pose_available": false,
+      "gate_pose_available": false,
+      "gate_position_commanded": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 2.0,
+        "yaw": 0.0
+      },
+      "camera_metadata": {
+        "timestamp": 1748772980.968571,
+        "height": 240,
+        "width": 320,
+        "encoding": "rgb8",
+        "frame_id": "high_level_robosub/block_link/underwater_camera"
+      },
+      "image_shape": [
+        240,
+        320,
+        3
+      ],
+      "image_filename": "image_000046_1748772980.968435.png",
+      "image_path": "comprehensive_data/images/image_000046_1748772980.968435.png"
+    },
+    {
+      "timestamp": 1748772981.0683863,
+      "camera_available": true,
+      "robosub_pose_available": false,
+      "gate_pose_available": true,
+      "gate_position_commanded": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 2.0,
+        "yaw": 0.0
+      },
+      "camera_metadata": {
+        "timestamp": 1748772981.0685084,
+        "height": 240,
+        "width": 320,
+        "encoding": "rgb8",
+        "frame_id": "high_level_robosub/block_link/underwater_camera"
+      },
+      "image_shape": [
+        240,
+        320,
+        3
+      ],
+      "gate_pose": {
+        "position": {
+          "x": 5.0,
+          "y": 0.0,
+          "z": 2.0
+        },
+        "orientation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        }
+      },
+      "image_filename": "image_000047_1748772981.068386.png",
+      "image_path": "comprehensive_data/images/image_000047_1748772981.068386.png"
+    },
+    {
+      "timestamp": 1748772981.16843,
+      "camera_available": true,
+      "robosub_pose_available": false,
+      "gate_pose_available": true,
+      "gate_position_commanded": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 2.0,
+        "yaw": 0.0
+      },
+      "camera_metadata": {
+        "timestamp": 1748772981.1685574,
+        "height": 240,
+        "width": 320,
+        "encoding": "rgb8",
+        "frame_id": "high_level_robosub/block_link/underwater_camera"
+      },
+      "image_shape": [
+        240,
+        320,
+        3
+      ],
+      "gate_pose": {
+        "position": {
+          "x": 5.0,
+          "y": 0.0,
+          "z": 2.0
+        },
+        "orientation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        }
+      },
+      "image_filename": "image_000048_1748772981.168430.png",
+      "image_path": "comprehensive_data/images/image_000048_1748772981.168430.png"
+    },
+    {
+      "timestamp": 1748772981.2684102,
+      "camera_available": true,
+      "robosub_pose_available": false,
+      "gate_pose_available": true,
+      "gate_position_commanded": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 2.0,
+        "yaw": 0.0
+      },
+      "camera_metadata": {
+        "timestamp": 1748772981.2685332,
+        "height": 240,
+        "width": 320,
+        "encoding": "rgb8",
+        "frame_id": "high_level_robosub/block_link/underwater_camera"
+      },
+      "image_shape": [
+        240,
+        320,
+        3
+      ],
+      "gate_pose": {
+        "position": {
+          "x": 5.0,
+          "y": 0.0,
+          "z": 2.0
+        },
+        "orientation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        }
+      },
+      "image_filename": "image_000049_1748772981.268410.png",
+      "image_path": "comprehensive_data/images/image_000049_1748772981.268410.png"
+    },
+    {
+      "timestamp": 1748772981.3698304,
+      "camera_available": true,
+      "robosub_pose_available": false,
+      "gate_pose_available": true,
+      "gate_position_commanded": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 2.0,
+        "yaw": 0.0
+      },
+      "camera_metadata": {
+        "timestamp": 1748772981.3699417,
+        "height": 240,
+        "width": 320,
+        "encoding": "rgb8",
+        "frame_id": "high_level_robosub/block_link/underwater_camera"
+      },
+      "image_shape": [
+        240,
+        320,
+        3
+      ],
+      "gate_pose": {
+        "position": {
+          "x": 5.0,
+          "y": 0.0,
+          "z": 2.0
+        },
+        "orientation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        }
+      },
+      "image_filename": "image_000050_1748772981.369830.png",
+      "image_path": "comprehensive_data/images/image_000050_1748772981.369830.png"
+    },
+    {
+      "timestamp": 1748772981.4684188,
+      "camera_available": true,
+      "robosub_pose_available": false,
+      "gate_pose_available": true,
+      "gate_position_commanded": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 2.0,
+        "yaw": 0.0
+      },
+      "camera_metadata": {
+        "timestamp": 1748772981.468542,
+        "height": 240,
+        "width": 320,
+        "encoding": "rgb8",
+        "frame_id": "high_level_robosub/block_link/underwater_camera"
+      },
+      "image_shape": [
+        240,
+        320,
+        3
+      ],
+      "gate_pose": {
+        "position": {
+          "x": 5.0,
+          "y": 0.0,
+          "z": 2.0
+        },
+        "orientation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        }
+      },
+      "image_filename": "image_000051_1748772981.468419.png",
+      "image_path": "comprehensive_data/images/image_000051_1748772981.468419.png"
+    },
+    {
+      "timestamp": 1748772981.5684469,
+      "camera_available": true,
+      "robosub_pose_available": false,
+      "gate_pose_available": true,
+      "gate_position_commanded": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 2.0,
+        "yaw": 0.0
+      },
+      "camera_metadata": {
+        "timestamp": 1748772981.5685563,
+        "height": 240,
+        "width": 320,
+        "encoding": "rgb8",
+        "frame_id": "high_level_robosub/block_link/underwater_camera"
+      },
+      "image_shape": [
+        240,
+        320,
+        3
+      ],
+      "gate_pose": {
+        "position": {
+          "x": 5.0,
+          "y": 0.0,
+          "z": 2.0
+        },
+        "orientation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        }
+      },
+      "image_filename": "image_000052_1748772981.568447.png",
+      "image_path": "comprehensive_data/images/image_000052_1748772981.568447.png"
+    },
+    {
+      "timestamp": 1748772981.6684024,
+      "camera_available": true,
+      "robosub_pose_available": false,
+      "gate_pose_available": true,
+      "gate_position_commanded": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 2.0,
+        "yaw": 0.0
+      },
+      "camera_metadata": {
+        "timestamp": 1748772981.668575,
+        "height": 240,
+        "width": 320,
+        "encoding": "rgb8",
+        "frame_id": "high_level_robosub/block_link/underwater_camera"
+      },
+      "image_shape": [
+        240,
+        320,
+        3
+      ],
+      "gate_pose": {
+        "position": {
+          "x": 5.0,
+          "y": 0.0,
+          "z": 2.0
+        },
+        "orientation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        }
+      },
+      "image_filename": "image_000053_1748772981.668402.png",
+      "image_path": "comprehensive_data/images/image_000053_1748772981.668402.png"
+    },
+    {
+      "timestamp": 1748772981.7684486,
+      "camera_available": true,
+      "robosub_pose_available": false,
+      "gate_pose_available": true,
+      "gate_position_commanded": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 2.0,
+        "yaw": 0.0
+      },
+      "camera_metadata": {
+        "timestamp": 1748772981.7685792,
+        "height": 240,
+        "width": 320,
+        "encoding": "rgb8",
+        "frame_id": "high_level_robosub/block_link/underwater_camera"
+      },
+      "image_shape": [
+        240,
+        320,
+        3
+      ],
+      "gate_pose": {
+        "position": {
+          "x": 5.0,
+          "y": 0.0,
+          "z": 2.0
+        },
+        "orientation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        }
+      },
+      "image_filename": "image_000054_1748772981.768449.png",
+      "image_path": "comprehensive_data/images/image_000054_1748772981.768449.png"
+    },
+    {
+      "timestamp": 1748772981.8691497,
+      "camera_available": true,
+      "robosub_pose_available": false,
+      "gate_pose_available": true,
+      "gate_position_commanded": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 2.0,
+        "yaw": 0.0
+      },
+      "camera_metadata": {
+        "timestamp": 1748772981.869253,
+        "height": 240,
+        "width": 320,
+        "encoding": "rgb8",
+        "frame_id": "high_level_robosub/block_link/underwater_camera"
+      },
+      "image_shape": [
+        240,
+        320,
+        3
+      ],
+      "gate_pose": {
+        "position": {
+          "x": 5.0,
+          "y": 0.0,
+          "z": 2.0
+        },
+        "orientation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        }
+      },
+      "image_filename": "image_000055_1748772981.869150.png",
+      "image_path": "comprehensive_data/images/image_000055_1748772981.869150.png"
+    },
+    {
+      "timestamp": 1748772981.9684055,
+      "camera_available": true,
+      "robosub_pose_available": false,
+      "gate_pose_available": true,
+      "gate_position_commanded": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 2.0,
+        "yaw": 0.0
+      },
+      "camera_metadata": {
+        "timestamp": 1748772981.968531,
+        "height": 240,
+        "width": 320,
+        "encoding": "rgb8",
+        "frame_id": "high_level_robosub/block_link/underwater_camera"
+      },
+      "image_shape": [
+        240,
+        320,
+        3
+      ],
+      "gate_pose": {
+        "position": {
+          "x": 5.0,
+          "y": 0.0,
+          "z": 2.0
+        },
+        "orientation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        }
+      },
+      "image_filename": "image_000056_1748772981.968405.png",
+      "image_path": "comprehensive_data/images/image_000056_1748772981.968405.png"
+    },
+    {
+      "timestamp": 1748772982.0683842,
+      "camera_available": true,
+      "robosub_pose_available": false,
+      "gate_pose_available": true,
+      "gate_position_commanded": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 2.0,
+        "yaw": 0.0
+      },
+      "camera_metadata": {
+        "timestamp": 1748772982.068495,
+        "height": 240,
+        "width": 320,
+        "encoding": "rgb8",
+        "frame_id": "high_level_robosub/block_link/underwater_camera"
+      },
+      "image_shape": [
+        240,
+        320,
+        3
+      ],
+      "gate_pose": {
+        "position": {
+          "x": 5.0,
+          "y": 0.0,
+          "z": 2.0
+        },
+        "orientation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        }
+      },
+      "image_filename": "image_000057_1748772982.068384.png",
+      "image_path": "comprehensive_data/images/image_000057_1748772982.068384.png"
+    },
+    {
+      "timestamp": 1748772982.1684012,
+      "camera_available": true,
+      "robosub_pose_available": false,
+      "gate_pose_available": true,
+      "gate_position_commanded": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 2.0,
+        "yaw": 0.0
+      },
+      "camera_metadata": {
+        "timestamp": 1748772982.1685154,
+        "height": 240,
+        "width": 320,
+        "encoding": "rgb8",
+        "frame_id": "high_level_robosub/block_link/underwater_camera"
+      },
+      "image_shape": [
+        240,
+        320,
+        3
+      ],
+      "gate_pose": {
+        "position": {
+          "x": 5.0,
+          "y": 0.0,
+          "z": 2.0
+        },
+        "orientation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        }
+      },
+      "image_filename": "image_000058_1748772982.168401.png",
+      "image_path": "comprehensive_data/images/image_000058_1748772982.168401.png"
+    },
+    {
+      "timestamp": 1748772982.268381,
+      "camera_available": true,
+      "robosub_pose_available": false,
+      "gate_pose_available": true,
+      "gate_position_commanded": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 2.0,
+        "yaw": 0.0
+      },
+      "camera_metadata": {
+        "timestamp": 1748772982.268493,
+        "height": 240,
+        "width": 320,
+        "encoding": "rgb8",
+        "frame_id": "high_level_robosub/block_link/underwater_camera"
+      },
+      "image_shape": [
+        240,
+        320,
+        3
+      ],
+      "gate_pose": {
+        "position": {
+          "x": 5.0,
+          "y": 0.0,
+          "z": 2.0
+        },
+        "orientation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        }
+      },
+      "image_filename": "image_000059_1748772982.268381.png",
+      "image_path": "comprehensive_data/images/image_000059_1748772982.268381.png"
+    },
+    {
+      "timestamp": 1748772982.3694656,
+      "camera_available": true,
+      "robosub_pose_available": false,
+      "gate_pose_available": true,
+      "gate_position_commanded": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 2.0,
+        "yaw": 0.0
+      },
+      "camera_metadata": {
+        "timestamp": 1748772982.369585,
+        "height": 240,
+        "width": 320,
+        "encoding": "rgb8",
+        "frame_id": "high_level_robosub/block_link/underwater_camera"
+      },
+      "image_shape": [
+        240,
+        320,
+        3
+      ],
+      "gate_pose": {
+        "position": {
+          "x": 5.0,
+          "y": 0.0,
+          "z": 2.0
+        },
+        "orientation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        }
+      },
+      "image_filename": "image_000060_1748772982.369466.png",
+      "image_path": "comprehensive_data/images/image_000060_1748772982.369466.png"
+    },
+    {
+      "timestamp": 1748772982.4684792,
+      "camera_available": true,
+      "robosub_pose_available": false,
+      "gate_pose_available": true,
+      "gate_position_commanded": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 2.0,
+        "yaw": 0.0
+      },
+      "camera_metadata": {
+        "timestamp": 1748772982.468603,
+        "height": 240,
+        "width": 320,
+        "encoding": "rgb8",
+        "frame_id": "high_level_robosub/block_link/underwater_camera"
+      },
+      "image_shape": [
+        240,
+        320,
+        3
+      ],
+      "gate_pose": {
+        "position": {
+          "x": 5.0,
+          "y": 0.0,
+          "z": 2.0
+        },
+        "orientation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        }
+      },
+      "image_filename": "image_000061_1748772982.468479.png",
+      "image_path": "comprehensive_data/images/image_000061_1748772982.468479.png"
+    },
+    {
+      "timestamp": 1748772982.5684412,
+      "camera_available": true,
+      "robosub_pose_available": false,
+      "gate_pose_available": true,
+      "gate_position_commanded": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 2.0,
+        "yaw": 0.0
+      },
+      "camera_metadata": {
+        "timestamp": 1748772982.5685787,
+        "height": 240,
+        "width": 320,
+        "encoding": "rgb8",
+        "frame_id": "high_level_robosub/block_link/underwater_camera"
+      },
+      "image_shape": [
+        240,
+        320,
+        3
+      ],
+      "gate_pose": {
+        "position": {
+          "x": 5.0,
+          "y": 0.0,
+          "z": 2.0
+        },
+        "orientation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        }
+      },
+      "image_filename": "image_000062_1748772982.568441.png",
+      "image_path": "comprehensive_data/images/image_000062_1748772982.568441.png"
+    },
+    {
+      "timestamp": 1748772982.668396,
+      "camera_available": true,
+      "robosub_pose_available": false,
+      "gate_pose_available": true,
+      "gate_position_commanded": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 2.0,
+        "yaw": 0.0
+      },
+      "camera_metadata": {
+        "timestamp": 1748772982.6685002,
+        "height": 240,
+        "width": 320,
+        "encoding": "rgb8",
+        "frame_id": "high_level_robosub/block_link/underwater_camera"
+      },
+      "image_shape": [
+        240,
+        320,
+        3
+      ],
+      "gate_pose": {
+        "position": {
+          "x": 5.0,
+          "y": 0.0,
+          "z": 2.0
+        },
+        "orientation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        }
+      },
+      "image_filename": "image_000063_1748772982.668396.png",
+      "image_path": "comprehensive_data/images/image_000063_1748772982.668396.png"
+    },
+    {
+      "timestamp": 1748772982.7683756,
+      "camera_available": true,
+      "robosub_pose_available": false,
+      "gate_pose_available": true,
+      "gate_position_commanded": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 2.0,
+        "yaw": 0.0
+      },
+      "camera_metadata": {
+        "timestamp": 1748772982.7684736,
+        "height": 240,
+        "width": 320,
+        "encoding": "rgb8",
+        "frame_id": "high_level_robosub/block_link/underwater_camera"
+      },
+      "image_shape": [
+        240,
+        320,
+        3
+      ],
+      "gate_pose": {
+        "position": {
+          "x": 5.0,
+          "y": 0.0,
+          "z": 2.0
+        },
+        "orientation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        }
+      },
+      "image_filename": "image_000064_1748772982.768376.png",
+      "image_path": "comprehensive_data/images/image_000064_1748772982.768376.png"
+    },
+    {
+      "timestamp": 1748772982.8689644,
+      "camera_available": true,
+      "robosub_pose_available": false,
+      "gate_pose_available": true,
+      "gate_position_commanded": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 2.0,
+        "yaw": 0.0
+      },
+      "camera_metadata": {
+        "timestamp": 1748772982.8690636,
+        "height": 240,
+        "width": 320,
+        "encoding": "rgb8",
+        "frame_id": "high_level_robosub/block_link/underwater_camera"
+      },
+      "image_shape": [
+        240,
+        320,
+        3
+      ],
+      "gate_pose": {
+        "position": {
+          "x": 5.0,
+          "y": 0.0,
+          "z": 2.0
+        },
+        "orientation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        }
+      },
+      "image_filename": "image_000065_1748772982.868964.png",
+      "image_path": "comprehensive_data/images/image_000065_1748772982.868964.png"
+    },
+    {
+      "timestamp": 1748772982.968367,
+      "camera_available": true,
+      "robosub_pose_available": false,
+      "gate_pose_available": true,
+      "gate_position_commanded": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 2.0,
+        "yaw": 0.0
+      },
+      "camera_metadata": {
+        "timestamp": 1748772982.9684734,
+        "height": 240,
+        "width": 320,
+        "encoding": "rgb8",
+        "frame_id": "high_level_robosub/block_link/underwater_camera"
+      },
+      "image_shape": [
+        240,
+        320,
+        3
+      ],
+      "gate_pose": {
+        "position": {
+          "x": 5.0,
+          "y": 0.0,
+          "z": 2.0
+        },
+        "orientation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        }
+      },
+      "image_filename": "image_000066_1748772982.968367.png",
+      "image_path": "comprehensive_data/images/image_000066_1748772982.968367.png"
+    },
+    {
+      "timestamp": 1748772983.0683866,
+      "camera_available": true,
+      "robosub_pose_available": false,
+      "gate_pose_available": true,
+      "gate_position_commanded": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 2.0,
+        "yaw": 0.0
+      },
+      "camera_metadata": {
+        "timestamp": 1748772983.0684946,
+        "height": 240,
+        "width": 320,
+        "encoding": "rgb8",
+        "frame_id": "high_level_robosub/block_link/underwater_camera"
+      },
+      "image_shape": [
+        240,
+        320,
+        3
+      ],
+      "gate_pose": {
+        "position": {
+          "x": 5.0,
+          "y": 0.0,
+          "z": 2.0
+        },
+        "orientation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        }
+      },
+      "image_filename": "image_000067_1748772983.068387.png",
+      "image_path": "comprehensive_data/images/image_000067_1748772983.068387.png"
+    },
+    {
+      "timestamp": 1748772983.168412,
+      "camera_available": true,
+      "robosub_pose_available": false,
+      "gate_pose_available": true,
+      "gate_position_commanded": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 2.0,
+        "yaw": 0.0
+      },
+      "camera_metadata": {
+        "timestamp": 1748772983.1685202,
+        "height": 240,
+        "width": 320,
+        "encoding": "rgb8",
+        "frame_id": "high_level_robosub/block_link/underwater_camera"
+      },
+      "image_shape": [
+        240,
+        320,
+        3
+      ],
+      "gate_pose": {
+        "position": {
+          "x": 5.0,
+          "y": 0.0,
+          "z": 2.0
+        },
+        "orientation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        }
+      },
+      "image_filename": "image_000068_1748772983.168412.png",
+      "image_path": "comprehensive_data/images/image_000068_1748772983.168412.png"
+    },
+    {
+      "timestamp": 1748772983.268343,
+      "camera_available": true,
+      "robosub_pose_available": false,
+      "gate_pose_available": true,
+      "gate_position_commanded": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 2.0,
+        "yaw": 0.0
+      },
+      "camera_metadata": {
+        "timestamp": 1748772983.268433,
+        "height": 240,
+        "width": 320,
+        "encoding": "rgb8",
+        "frame_id": "high_level_robosub/block_link/underwater_camera"
+      },
+      "image_shape": [
+        240,
+        320,
+        3
+      ],
+      "gate_pose": {
+        "position": {
+          "x": 5.0,
+          "y": 0.0,
+          "z": 2.0
+        },
+        "orientation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        }
+      },
+      "image_filename": "image_000069_1748772983.268343.png",
+      "image_path": "comprehensive_data/images/image_000069_1748772983.268343.png"
+    },
+    {
+      "timestamp": 1748772983.3694265,
+      "camera_available": true,
+      "robosub_pose_available": false,
+      "gate_pose_available": true,
+      "gate_position_commanded": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 2.0,
+        "yaw": 0.0
+      },
+      "camera_metadata": {
+        "timestamp": 1748772983.3695273,
+        "height": 240,
+        "width": 320,
+        "encoding": "rgb8",
+        "frame_id": "high_level_robosub/block_link/underwater_camera"
+      },
+      "image_shape": [
+        240,
+        320,
+        3
+      ],
+      "gate_pose": {
+        "position": {
+          "x": 5.0,
+          "y": 0.0,
+          "z": 2.0
+        },
+        "orientation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        }
+      },
+      "image_filename": "image_000070_1748772983.369426.png",
+      "image_path": "comprehensive_data/images/image_000070_1748772983.369426.png"
+    },
+    {
+      "timestamp": 1748772983.4683344,
+      "camera_available": true,
+      "robosub_pose_available": false,
+      "gate_pose_available": true,
+      "gate_position_commanded": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 2.0,
+        "yaw": 0.0
+      },
+      "camera_metadata": {
+        "timestamp": 1748772983.4684305,
+        "height": 240,
+        "width": 320,
+        "encoding": "rgb8",
+        "frame_id": "high_level_robosub/block_link/underwater_camera"
+      },
+      "image_shape": [
+        240,
+        320,
+        3
+      ],
+      "gate_pose": {
+        "position": {
+          "x": 5.0,
+          "y": 0.0,
+          "z": 2.0
+        },
+        "orientation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        }
+      },
+      "image_filename": "image_000071_1748772983.468334.png",
+      "image_path": "comprehensive_data/images/image_000071_1748772983.468334.png"
+    },
+    {
+      "timestamp": 1748772983.5683677,
+      "camera_available": true,
+      "robosub_pose_available": false,
+      "gate_pose_available": true,
+      "gate_position_commanded": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 2.0,
+        "yaw": 0.0
+      },
+      "camera_metadata": {
+        "timestamp": 1748772983.5684643,
+        "height": 240,
+        "width": 320,
+        "encoding": "rgb8",
+        "frame_id": "high_level_robosub/block_link/underwater_camera"
+      },
+      "image_shape": [
+        240,
+        320,
+        3
+      ],
+      "gate_pose": {
+        "position": {
+          "x": 5.0,
+          "y": 0.0,
+          "z": 2.0
+        },
+        "orientation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        }
+      },
+      "image_filename": "image_000072_1748772983.568368.png",
+      "image_path": "comprehensive_data/images/image_000072_1748772983.568368.png"
+    },
+    {
+      "timestamp": 1748772983.6683657,
+      "camera_available": true,
+      "robosub_pose_available": false,
+      "gate_pose_available": true,
+      "gate_position_commanded": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 2.0,
+        "yaw": 0.0
+      },
+      "camera_metadata": {
+        "timestamp": 1748772983.6684642,
+        "height": 240,
+        "width": 320,
+        "encoding": "rgb8",
+        "frame_id": "high_level_robosub/block_link/underwater_camera"
+      },
+      "image_shape": [
+        240,
+        320,
+        3
+      ],
+      "gate_pose": {
+        "position": {
+          "x": 5.0,
+          "y": 0.0,
+          "z": 2.0
+        },
+        "orientation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        }
+      },
+      "image_filename": "image_000073_1748772983.668366.png",
+      "image_path": "comprehensive_data/images/image_000073_1748772983.668366.png"
+    },
+    {
+      "timestamp": 1748772983.7683983,
+      "camera_available": true,
+      "robosub_pose_available": false,
+      "gate_pose_available": true,
+      "gate_position_commanded": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 2.0,
+        "yaw": 0.0
+      },
+      "camera_metadata": {
+        "timestamp": 1748772983.7685013,
+        "height": 240,
+        "width": 320,
+        "encoding": "rgb8",
+        "frame_id": "high_level_robosub/block_link/underwater_camera"
+      },
+      "image_shape": [
+        240,
+        320,
+        3
+      ],
+      "gate_pose": {
+        "position": {
+          "x": 5.0,
+          "y": 0.0,
+          "z": 2.0
+        },
+        "orientation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        }
+      },
+      "image_filename": "image_000074_1748772983.768398.png",
+      "image_path": "comprehensive_data/images/image_000074_1748772983.768398.png"
+    },
+    {
+      "timestamp": 1748772983.8690195,
+      "camera_available": true,
+      "robosub_pose_available": false,
+      "gate_pose_available": true,
+      "gate_position_commanded": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 2.0,
+        "yaw": 0.0
+      },
+      "camera_metadata": {
+        "timestamp": 1748772983.8691156,
+        "height": 240,
+        "width": 320,
+        "encoding": "rgb8",
+        "frame_id": "high_level_robosub/block_link/underwater_camera"
+      },
+      "image_shape": [
+        240,
+        320,
+        3
+      ],
+      "gate_pose": {
+        "position": {
+          "x": 5.0,
+          "y": 0.0,
+          "z": 2.0
+        },
+        "orientation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        }
+      },
+      "image_filename": "image_000075_1748772983.869020.png",
+      "image_path": "comprehensive_data/images/image_000075_1748772983.869020.png"
+    },
+    {
+      "timestamp": 1748772983.968362,
+      "camera_available": true,
+      "robosub_pose_available": false,
+      "gate_pose_available": true,
+      "gate_position_commanded": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 2.0,
+        "yaw": 0.0
+      },
+      "camera_metadata": {
+        "timestamp": 1748772983.9684565,
+        "height": 240,
+        "width": 320,
+        "encoding": "rgb8",
+        "frame_id": "high_level_robosub/block_link/underwater_camera"
+      },
+      "image_shape": [
+        240,
+        320,
+        3
+      ],
+      "gate_pose": {
+        "position": {
+          "x": 5.0,
+          "y": 0.0,
+          "z": 2.0
+        },
+        "orientation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        }
+      },
+      "image_filename": "image_000076_1748772983.968362.png",
+      "image_path": "comprehensive_data/images/image_000076_1748772983.968362.png"
+    },
+    {
+      "timestamp": 1748772984.0683682,
+      "camera_available": true,
+      "robosub_pose_available": false,
+      "gate_pose_available": true,
+      "gate_position_commanded": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 2.0,
+        "yaw": 0.0
+      },
+      "camera_metadata": {
+        "timestamp": 1748772984.0684617,
+        "height": 240,
+        "width": 320,
+        "encoding": "rgb8",
+        "frame_id": "high_level_robosub/block_link/underwater_camera"
+      },
+      "image_shape": [
+        240,
+        320,
+        3
+      ],
+      "gate_pose": {
+        "position": {
+          "x": 5.0,
+          "y": 0.0,
+          "z": 2.0
+        },
+        "orientation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        }
+      },
+      "image_filename": "image_000077_1748772984.068368.png",
+      "image_path": "comprehensive_data/images/image_000077_1748772984.068368.png"
+    },
+    {
+      "timestamp": 1748772984.168393,
+      "camera_available": true,
+      "robosub_pose_available": false,
+      "gate_pose_available": true,
+      "gate_position_commanded": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 2.0,
+        "yaw": 0.0
+      },
+      "camera_metadata": {
+        "timestamp": 1748772984.1684883,
+        "height": 240,
+        "width": 320,
+        "encoding": "rgb8",
+        "frame_id": "high_level_robosub/block_link/underwater_camera"
+      },
+      "image_shape": [
+        240,
+        320,
+        3
+      ],
+      "gate_pose": {
+        "position": {
+          "x": 5.0,
+          "y": 0.0,
+          "z": 2.0
+        },
+        "orientation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        }
+      },
+      "image_filename": "image_000078_1748772984.168393.png",
+      "image_path": "comprehensive_data/images/image_000078_1748772984.168393.png"
+    },
+    {
+      "timestamp": 1748772984.2683864,
+      "camera_available": true,
+      "robosub_pose_available": false,
+      "gate_pose_available": true,
+      "gate_position_commanded": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 2.0,
+        "yaw": 0.0
+      },
+      "camera_metadata": {
+        "timestamp": 1748772984.2684946,
+        "height": 240,
+        "width": 320,
+        "encoding": "rgb8",
+        "frame_id": "high_level_robosub/block_link/underwater_camera"
+      },
+      "image_shape": [
+        240,
+        320,
+        3
+      ],
+      "gate_pose": {
+        "position": {
+          "x": 5.0,
+          "y": 0.0,
+          "z": 2.0
+        },
+        "orientation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        }
+      },
+      "image_filename": "image_000079_1748772984.268386.png",
+      "image_path": "comprehensive_data/images/image_000079_1748772984.268386.png"
+    },
+    {
+      "timestamp": 1748772984.3692372,
+      "camera_available": true,
+      "robosub_pose_available": false,
+      "gate_pose_available": true,
+      "gate_position_commanded": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 2.0,
+        "yaw": 0.0
+      },
+      "camera_metadata": {
+        "timestamp": 1748772984.3693557,
+        "height": 240,
+        "width": 320,
+        "encoding": "rgb8",
+        "frame_id": "high_level_robosub/block_link/underwater_camera"
+      },
+      "image_shape": [
+        240,
+        320,
+        3
+      ],
+      "gate_pose": {
+        "position": {
+          "x": 5.0,
+          "y": 0.0,
+          "z": 2.0
+        },
+        "orientation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        }
+      },
+      "image_filename": "image_000080_1748772984.369237.png",
+      "image_path": "comprehensive_data/images/image_000080_1748772984.369237.png"
+    },
+    {
+      "timestamp": 1748772984.4724658,
+      "camera_available": true,
+      "robosub_pose_available": false,
+      "gate_pose_available": true,
+      "gate_position_commanded": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 2.0,
+        "yaw": 0.0
+      },
+      "camera_metadata": {
+        "timestamp": 1748772984.4725606,
+        "height": 240,
+        "width": 320,
+        "encoding": "rgb8",
+        "frame_id": "high_level_robosub/block_link/underwater_camera"
+      },
+      "image_shape": [
+        240,
+        320,
+        3
+      ],
+      "gate_pose": {
+        "position": {
+          "x": 5.0,
+          "y": 0.0,
+          "z": 2.0
+        },
+        "orientation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        }
+      },
+      "image_filename": "image_000081_1748772984.472466.png",
+      "image_path": "comprehensive_data/images/image_000081_1748772984.472466.png"
+    },
+    {
+      "timestamp": 1748772984.5683794,
+      "camera_available": true,
+      "robosub_pose_available": false,
+      "gate_pose_available": true,
+      "gate_position_commanded": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 2.0,
+        "yaw": 0.0
+      },
+      "camera_metadata": {
+        "timestamp": 1748772984.5684776,
+        "height": 240,
+        "width": 320,
+        "encoding": "rgb8",
+        "frame_id": "high_level_robosub/block_link/underwater_camera"
+      },
+      "image_shape": [
+        240,
+        320,
+        3
+      ],
+      "gate_pose": {
+        "position": {
+          "x": 5.0,
+          "y": 0.0,
+          "z": 2.0
+        },
+        "orientation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        }
+      },
+      "image_filename": "image_000082_1748772984.568379.png",
+      "image_path": "comprehensive_data/images/image_000082_1748772984.568379.png"
+    },
+    {
+      "timestamp": 1748772984.6682997,
+      "camera_available": true,
+      "robosub_pose_available": false,
+      "gate_pose_available": true,
+      "gate_position_commanded": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 2.0,
+        "yaw": 0.0
+      },
+      "camera_metadata": {
+        "timestamp": 1748772984.6684017,
+        "height": 240,
+        "width": 320,
+        "encoding": "rgb8",
+        "frame_id": "high_level_robosub/block_link/underwater_camera"
+      },
+      "image_shape": [
+        240,
+        320,
+        3
+      ],
+      "gate_pose": {
+        "position": {
+          "x": 5.0,
+          "y": 0.0,
+          "z": 2.0
+        },
+        "orientation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        }
+      },
+      "image_filename": "image_000083_1748772984.668300.png",
+      "image_path": "comprehensive_data/images/image_000083_1748772984.668300.png"
+    },
+    {
+      "timestamp": 1748772984.7683768,
+      "camera_available": true,
+      "robosub_pose_available": false,
+      "gate_pose_available": true,
+      "gate_position_commanded": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 2.0,
+        "yaw": 0.0
+      },
+      "camera_metadata": {
+        "timestamp": 1748772984.7684755,
+        "height": 240,
+        "width": 320,
+        "encoding": "rgb8",
+        "frame_id": "high_level_robosub/block_link/underwater_camera"
+      },
+      "image_shape": [
+        240,
+        320,
+        3
+      ],
+      "gate_pose": {
+        "position": {
+          "x": 5.0,
+          "y": 0.0,
+          "z": 2.0
+        },
+        "orientation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        }
+      },
+      "image_filename": "image_000084_1748772984.768377.png",
+      "image_path": "comprehensive_data/images/image_000084_1748772984.768377.png"
+    },
+    {
+      "timestamp": 1748772984.8690875,
+      "camera_available": true,
+      "robosub_pose_available": false,
+      "gate_pose_available": true,
+      "gate_position_commanded": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 2.0,
+        "yaw": 0.0
+      },
+      "camera_metadata": {
+        "timestamp": 1748772984.869189,
+        "height": 240,
+        "width": 320,
+        "encoding": "rgb8",
+        "frame_id": "high_level_robosub/block_link/underwater_camera"
+      },
+      "image_shape": [
+        240,
+        320,
+        3
+      ],
+      "gate_pose": {
+        "position": {
+          "x": 5.0,
+          "y": 0.0,
+          "z": 2.0
+        },
+        "orientation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        }
+      },
+      "image_filename": "image_000085_1748772984.869087.png",
+      "image_path": "comprehensive_data/images/image_000085_1748772984.869087.png"
+    },
+    {
+      "timestamp": 1748772984.968537,
+      "camera_available": true,
+      "robosub_pose_available": false,
+      "gate_pose_available": true,
+      "gate_position_commanded": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 2.0,
+        "yaw": 0.0
+      },
+      "camera_metadata": {
+        "timestamp": 1748772984.9686353,
+        "height": 240,
+        "width": 320,
+        "encoding": "rgb8",
+        "frame_id": "high_level_robosub/block_link/underwater_camera"
+      },
+      "image_shape": [
+        240,
+        320,
+        3
+      ],
+      "gate_pose": {
+        "position": {
+          "x": 5.0,
+          "y": 0.0,
+          "z": 2.0
+        },
+        "orientation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        }
+      },
+      "image_filename": "image_000086_1748772984.968537.png",
+      "image_path": "comprehensive_data/images/image_000086_1748772984.968537.png"
+    },
+    {
+      "timestamp": 1748772985.068345,
+      "camera_available": true,
+      "robosub_pose_available": false,
+      "gate_pose_available": true,
+      "gate_position_commanded": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 2.0,
+        "yaw": 0.0
+      },
+      "camera_metadata": {
+        "timestamp": 1748772985.0684428,
+        "height": 240,
+        "width": 320,
+        "encoding": "rgb8",
+        "frame_id": "high_level_robosub/block_link/underwater_camera"
+      },
+      "image_shape": [
+        240,
+        320,
+        3
+      ],
+      "gate_pose": {
+        "position": {
+          "x": 5.0,
+          "y": 0.0,
+          "z": 2.0
+        },
+        "orientation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        }
+      },
+      "image_filename": "image_000087_1748772985.068345.png",
+      "image_path": "comprehensive_data/images/image_000087_1748772985.068345.png"
+    },
+    {
+      "timestamp": 1748772985.1683526,
+      "camera_available": true,
+      "robosub_pose_available": false,
+      "gate_pose_available": true,
+      "gate_position_commanded": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 2.0,
+        "yaw": 0.0
+      },
+      "camera_metadata": {
+        "timestamp": 1748772985.168466,
+        "height": 240,
+        "width": 320,
+        "encoding": "rgb8",
+        "frame_id": "high_level_robosub/block_link/underwater_camera"
+      },
+      "image_shape": [
+        240,
+        320,
+        3
+      ],
+      "gate_pose": {
+        "position": {
+          "x": 5.0,
+          "y": 0.0,
+          "z": 2.0
+        },
+        "orientation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        }
+      },
+      "image_filename": "image_000088_1748772985.168353.png",
+      "image_path": "comprehensive_data/images/image_000088_1748772985.168353.png"
+    },
+    {
+      "timestamp": 1748772985.2688935,
+      "camera_available": true,
+      "robosub_pose_available": false,
+      "gate_pose_available": true,
+      "gate_position_commanded": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 2.0,
+        "yaw": 0.0
+      },
+      "camera_metadata": {
+        "timestamp": 1748772985.2690036,
+        "height": 240,
+        "width": 320,
+        "encoding": "rgb8",
+        "frame_id": "high_level_robosub/block_link/underwater_camera"
+      },
+      "image_shape": [
+        240,
+        320,
+        3
+      ],
+      "gate_pose": {
+        "position": {
+          "x": 5.0,
+          "y": 0.0,
+          "z": 2.0
+        },
+        "orientation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        }
+      },
+      "image_filename": "image_000089_1748772985.268893.png",
+      "image_path": "comprehensive_data/images/image_000089_1748772985.268893.png"
+    },
+    {
+      "timestamp": 1748772985.369465,
+      "camera_available": true,
+      "robosub_pose_available": false,
+      "gate_pose_available": true,
+      "gate_position_commanded": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 2.0,
+        "yaw": 0.0
+      },
+      "camera_metadata": {
+        "timestamp": 1748772985.3695903,
+        "height": 240,
+        "width": 320,
+        "encoding": "rgb8",
+        "frame_id": "high_level_robosub/block_link/underwater_camera"
+      },
+      "image_shape": [
+        240,
+        320,
+        3
+      ],
+      "gate_pose": {
+        "position": {
+          "x": 5.0,
+          "y": 0.0,
+          "z": 2.0
+        },
+        "orientation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        }
+      },
+      "image_filename": "image_000090_1748772985.369465.png",
+      "image_path": "comprehensive_data/images/image_000090_1748772985.369465.png"
+    },
+    {
+      "timestamp": 1748772985.4684384,
+      "camera_available": true,
+      "robosub_pose_available": false,
+      "gate_pose_available": true,
+      "gate_position_commanded": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 2.0,
+        "yaw": 0.0
+      },
+      "camera_metadata": {
+        "timestamp": 1748772985.4685576,
+        "height": 240,
+        "width": 320,
+        "encoding": "rgb8",
+        "frame_id": "high_level_robosub/block_link/underwater_camera"
+      },
+      "image_shape": [
+        240,
+        320,
+        3
+      ],
+      "gate_pose": {
+        "position": {
+          "x": 5.0,
+          "y": 0.0,
+          "z": 2.0
+        },
+        "orientation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        }
+      },
+      "image_filename": "image_000091_1748772985.468438.png",
+      "image_path": "comprehensive_data/images/image_000091_1748772985.468438.png"
+    },
+    {
+      "timestamp": 1748772985.5688386,
+      "camera_available": true,
+      "robosub_pose_available": false,
+      "gate_pose_available": true,
+      "gate_position_commanded": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 2.0,
+        "yaw": 0.0
+      },
+      "camera_metadata": {
+        "timestamp": 1748772985.5689626,
+        "height": 240,
+        "width": 320,
+        "encoding": "rgb8",
+        "frame_id": "high_level_robosub/block_link/underwater_camera"
+      },
+      "image_shape": [
+        240,
+        320,
+        3
+      ],
+      "gate_pose": {
+        "position": {
+          "x": 5.0,
+          "y": 0.0,
+          "z": 2.0
+        },
+        "orientation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        }
+      },
+      "image_filename": "image_000092_1748772985.568839.png",
+      "image_path": "comprehensive_data/images/image_000092_1748772985.568839.png"
+    },
+    {
+      "timestamp": 1748772985.668374,
+      "camera_available": true,
+      "robosub_pose_available": false,
+      "gate_pose_available": true,
+      "gate_position_commanded": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 2.0,
+        "yaw": 0.0
+      },
+      "camera_metadata": {
+        "timestamp": 1748772985.6684697,
+        "height": 240,
+        "width": 320,
+        "encoding": "rgb8",
+        "frame_id": "high_level_robosub/block_link/underwater_camera"
+      },
+      "image_shape": [
+        240,
+        320,
+        3
+      ],
+      "gate_pose": {
+        "position": {
+          "x": 5.0,
+          "y": 0.0,
+          "z": 2.0
+        },
+        "orientation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        }
+      },
+      "image_filename": "image_000093_1748772985.668374.png",
+      "image_path": "comprehensive_data/images/image_000093_1748772985.668374.png"
+    },
+    {
+      "timestamp": 1748772985.7682948,
+      "camera_available": true,
+      "robosub_pose_available": false,
+      "gate_pose_available": true,
+      "gate_position_commanded": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 2.0,
+        "yaw": 0.0
+      },
+      "camera_metadata": {
+        "timestamp": 1748772985.7683914,
+        "height": 240,
+        "width": 320,
+        "encoding": "rgb8",
+        "frame_id": "high_level_robosub/block_link/underwater_camera"
+      },
+      "image_shape": [
+        240,
+        320,
+        3
+      ],
+      "gate_pose": {
+        "position": {
+          "x": 5.0,
+          "y": 0.0,
+          "z": 2.0
+        },
+        "orientation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        }
+      },
+      "image_filename": "image_000094_1748772985.768295.png",
+      "image_path": "comprehensive_data/images/image_000094_1748772985.768295.png"
+    },
+    {
+      "timestamp": 1748772985.8693922,
+      "camera_available": true,
+      "robosub_pose_available": false,
+      "gate_pose_available": true,
+      "gate_position_commanded": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 2.0,
+        "yaw": 0.0
+      },
+      "camera_metadata": {
+        "timestamp": 1748772985.869482,
+        "height": 240,
+        "width": 320,
+        "encoding": "rgb8",
+        "frame_id": "high_level_robosub/block_link/underwater_camera"
+      },
+      "image_shape": [
+        240,
+        320,
+        3
+      ],
+      "gate_pose": {
+        "position": {
+          "x": 5.0,
+          "y": 0.0,
+          "z": 2.0
+        },
+        "orientation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        }
+      },
+      "image_filename": "image_000095_1748772985.869392.png",
+      "image_path": "comprehensive_data/images/image_000095_1748772985.869392.png"
+    },
+    {
+      "timestamp": 1748772985.9683578,
+      "camera_available": true,
+      "robosub_pose_available": false,
+      "gate_pose_available": true,
+      "gate_position_commanded": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 2.0,
+        "yaw": 0.0
+      },
+      "camera_metadata": {
+        "timestamp": 1748772985.9685347,
+        "height": 240,
+        "width": 320,
+        "encoding": "rgb8",
+        "frame_id": "high_level_robosub/block_link/underwater_camera"
+      },
+      "image_shape": [
+        240,
+        320,
+        3
+      ],
+      "gate_pose": {
+        "position": {
+          "x": 5.0,
+          "y": 0.0,
+          "z": 2.0
+        },
+        "orientation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        }
+      },
+      "image_filename": "image_000096_1748772985.968358.png",
+      "image_path": "comprehensive_data/images/image_000096_1748772985.968358.png"
+    },
+    {
+      "timestamp": 1748772986.0683677,
+      "camera_available": true,
+      "robosub_pose_available": false,
+      "gate_pose_available": true,
+      "gate_position_commanded": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 2.0,
+        "yaw": 0.0
+      },
+      "camera_metadata": {
+        "timestamp": 1748772986.0684617,
+        "height": 240,
+        "width": 320,
+        "encoding": "rgb8",
+        "frame_id": "high_level_robosub/block_link/underwater_camera"
+      },
+      "image_shape": [
+        240,
+        320,
+        3
+      ],
+      "gate_pose": {
+        "position": {
+          "x": 5.0,
+          "y": 0.0,
+          "z": 2.0
+        },
+        "orientation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        }
+      },
+      "image_filename": "image_000097_1748772986.068368.png",
+      "image_path": "comprehensive_data/images/image_000097_1748772986.068368.png"
+    },
+    {
+      "timestamp": 1748772986.168376,
+      "camera_available": true,
+      "robosub_pose_available": false,
+      "gate_pose_available": true,
+      "gate_position_commanded": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 2.0,
+        "yaw": 0.0
+      },
+      "camera_metadata": {
+        "timestamp": 1748772986.1684692,
+        "height": 240,
+        "width": 320,
+        "encoding": "rgb8",
+        "frame_id": "high_level_robosub/block_link/underwater_camera"
+      },
+      "image_shape": [
+        240,
+        320,
+        3
+      ],
+      "gate_pose": {
+        "position": {
+          "x": 5.0,
+          "y": 0.0,
+          "z": 2.0
+        },
+        "orientation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        }
+      },
+      "image_filename": "image_000098_1748772986.168376.png",
+      "image_path": "comprehensive_data/images/image_000098_1748772986.168376.png"
+    },
+    {
+      "timestamp": 1748772986.2683434,
+      "camera_available": true,
+      "robosub_pose_available": false,
+      "gate_pose_available": true,
+      "gate_position_commanded": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 2.0,
+        "yaw": 0.0
+      },
+      "camera_metadata": {
+        "timestamp": 1748772986.2684395,
+        "height": 240,
+        "width": 320,
+        "encoding": "rgb8",
+        "frame_id": "high_level_robosub/block_link/underwater_camera"
+      },
+      "image_shape": [
+        240,
+        320,
+        3
+      ],
+      "gate_pose": {
+        "position": {
+          "x": 5.0,
+          "y": 0.0,
+          "z": 2.0
+        },
+        "orientation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        }
+      },
+      "image_filename": "image_000099_1748772986.268343.png",
+      "image_path": "comprehensive_data/images/image_000099_1748772986.268343.png"
+    },
+    {
+      "timestamp": 1748772986.3695946,
+      "camera_available": true,
+      "robosub_pose_available": false,
+      "gate_pose_available": true,
+      "gate_position_commanded": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 2.0,
+        "yaw": 0.0
+      },
+      "camera_metadata": {
+        "timestamp": 1748772986.3696935,
+        "height": 240,
+        "width": 320,
+        "encoding": "rgb8",
+        "frame_id": "high_level_robosub/block_link/underwater_camera"
+      },
+      "image_shape": [
+        240,
+        320,
+        3
+      ],
+      "gate_pose": {
+        "position": {
+          "x": 5.0,
+          "y": 0.0,
+          "z": 2.0
+        },
+        "orientation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        }
+      },
+      "image_filename": "image_000100_1748772986.369595.png",
+      "image_path": "comprehensive_data/images/image_000100_1748772986.369595.png"
+    },
+    {
+      "timestamp": 1748772986.4683897,
+      "camera_available": true,
+      "robosub_pose_available": false,
+      "gate_pose_available": true,
+      "gate_position_commanded": {
+        "x": 4.0,
+        "y": 2.0,
+        "z": 1.5,
+        "yaw": 0.5
+      },
+      "camera_metadata": {
+        "timestamp": 1748772986.468496,
+        "height": 240,
+        "width": 320,
+        "encoding": "rgb8",
+        "frame_id": "high_level_robosub/block_link/underwater_camera"
+      },
+      "image_shape": [
+        240,
+        320,
+        3
+      ],
+      "gate_pose": {
+        "position": {
+          "x": 4.0,
+          "y": 2.0,
+          "z": 1.5
+        },
+        "orientation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.24740395925452294,
+          "w": 0.9689124217106447
+        }
+      },
+      "image_filename": "image_000101_1748772986.468390.png",
+      "image_path": "comprehensive_data/images/image_000101_1748772986.468390.png"
+    },
+    {
+      "timestamp": 1748772986.5683482,
+      "camera_available": true,
+      "robosub_pose_available": false,
+      "gate_pose_available": true,
+      "gate_position_commanded": {
+        "x": 4.0,
+        "y": 2.0,
+        "z": 1.5,
+        "yaw": 0.5
+      },
+      "camera_metadata": {
+        "timestamp": 1748772986.5684416,
+        "height": 240,
+        "width": 320,
+        "encoding": "rgb8",
+        "frame_id": "high_level_robosub/block_link/underwater_camera"
+      },
+      "image_shape": [
+        240,
+        320,
+        3
+      ],
+      "gate_pose": {
+        "position": {
+          "x": 4.0,
+          "y": 2.0,
+          "z": 1.5
+        },
+        "orientation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.24740395925452294,
+          "w": 0.9689124217106447
+        }
+      },
+      "image_filename": "image_000102_1748772986.568348.png",
+      "image_path": "comprehensive_data/images/image_000102_1748772986.568348.png"
+    }
+  ]
+}
